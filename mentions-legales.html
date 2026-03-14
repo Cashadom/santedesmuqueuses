@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Mentions légales & Politique de cookies — SanteDesMuqueuses.fr</title>
+<meta name="description" content="Mentions légales, politique de confidentialité, cookies et avertissement médical de SanteDesMuqueuses.fr — site d'information sur la santé des muqueuses."/>
+<meta name="robots" content="noindex"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --blue:#2C6E9E;--blue-mid:#3F8FBE;--blue-pale:#EBF4FA;--blue-line:#C8DFF0;
+  --green:#3D7A40;--green-mid:#5FA463;--green-pale:#EAF4EA;
+  --amber:#C8780A;--amber-pale:#FEF4E0;
+  --red:#C0392B;--red-pale:#FDECEA;
+  --bg:#FAFCFB;--white:#FFFFFF;--rule:#E2EAEC;
+  --text:#1E2C30;--text-mid:#4A5E64;--text-light:#7A9098;
+  --serif:'Lora',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;
+  --r:8px;--r-lg:14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.75;-webkit-font-smoothing:antialiased;}
+a{color:var(--blue);text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/* NAV */
+.site-nav{background:var(--white);border-bottom:1px solid var(--rule);padding:0 24px;position:sticky;top:0;z-index:100;}
+.site-nav-inner{max-width:1060px;margin:0 auto;display:flex;align-items:center;height:58px;gap:24px;}
+.site-nav-brand{font-family:var(--serif);font-weight:700;font-size:.95rem;color:var(--blue);white-space:nowrap;}
+.site-nav-links{display:flex;gap:4px;}
+.site-nav-links a{font-size:.82rem;font-weight:500;color:var(--text-mid);padding:5px 10px;border-radius:6px;transition:background .15s,color .15s;}
+.site-nav-links a:hover{background:var(--blue-pale);color:var(--blue);text-decoration:none;}
+
+/* HERO */
+.page-hero{background:linear-gradient(135deg,var(--blue) 0%,#1e5078 100%);padding:48px 24px 40px;position:relative;overflow:hidden;}
+.page-hero::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(95,164,99,.12) 0%,transparent 55%);pointer-events:none;}
+.page-hero-inner{max-width:800px;margin:0 auto;position:relative;}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:.76rem;color:rgba(255,255,255,.6);margin-bottom:16px;flex-wrap:wrap;}
+.breadcrumb a{color:rgba(255,255,255,.65);}
+.breadcrumb a:hover{color:#fff;text-decoration:none;}
+.breadcrumb-sep{opacity:.4;}
+.page-hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.2;color:#fff;margin-bottom:12px;}
+.page-hero-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.meta-chip{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:4px 12px;border-radius:50px;font-size:.75rem;color:rgba(255,255,255,.8);}
+
+/* WAVE */
+.wave-sep{display:block;width:100%;overflow:hidden;line-height:0;background:linear-gradient(135deg,var(--blue) 0%,#1e5078 100%);}
+.wave-sep svg{display:block;width:100%;}
+
+/* LAYOUT */
+.page-wrap{max-width:1060px;margin:0 auto;padding:0 24px;}
+.page-layout{display:grid;grid-template-columns:1fr 240px;gap:48px;padding:52px 0 80px;}
+
+/* TOC */
+.toc{position:sticky;top:78px;align-self:start;background:var(--white);border:1px solid var(--rule);border-radius:var(--r-lg);padding:18px;}
+.toc-title{font-size:.73rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-light);margin-bottom:10px;}
+.toc-list{display:flex;flex-direction:column;gap:3px;}
+.toc-link{font-size:.82rem;color:var(--text-mid);padding:5px 8px;border-radius:6px;display:block;transition:background .15s,color .15s;border-left:2px solid transparent;}
+.toc-link:hover{background:var(--blue-pale);color:var(--blue);text-decoration:none;border-left-color:var(--blue-mid);}
+
+/* CONTENT */
+.legal-content{}
+.legal-content h2{font-family:var(--serif);font-weight:700;font-size:1.35rem;color:var(--text);margin:44px 0 14px;line-height:1.25;padding-bottom:10px;border-bottom:1px solid var(--rule);}
+.legal-content h3{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--text);margin:24px 0 8px;}
+.legal-content p{font-size:.97rem;color:var(--text-mid);line-height:1.78;margin-bottom:14px;}
+.legal-content p strong{color:var(--text);}
+.legal-content ul{margin:0 0 16px 0;padding-left:20px;}
+.legal-content li{font-size:.94rem;color:var(--text-mid);line-height:1.7;margin-bottom:5px;}
+.legal-content ul li::marker{color:var(--blue-mid);}
+
+/* INFO TABLE */
+.info-table{width:100%;border-collapse:collapse;margin:16px 0 24px;font-size:.9rem;}
+.info-table tr{border-bottom:1px solid var(--rule);}
+.info-table tr:last-child{border-bottom:none;}
+.info-table td{padding:9px 12px;color:var(--text-mid);vertical-align:top;}
+.info-table td:first-child{font-weight:600;color:var(--text);width:40%;background:var(--bg);white-space:nowrap;}
+
+/* CALLOUTS */
+.callout{border-left:4px solid;border-radius:0 var(--r) var(--r) 0;padding:16px 20px;margin:20px 0;}
+.callout.red{border-color:var(--red);background:var(--red-pale);}
+.callout.blue{border-color:var(--blue-mid);background:var(--blue-pale);}
+.callout.amber{border-color:var(--amber);background:var(--amber-pale);}
+.callout.green{border-color:var(--green-mid);background:var(--green-pale);}
+.callout-title{font-weight:700;font-size:.9rem;margin-bottom:6px;}
+.callout.red .callout-title{color:var(--red);}
+.callout.blue .callout-title{color:var(--blue);}
+.callout.amber .callout-title{color:var(--amber);}
+.callout.green .callout-title{color:var(--green);}
+.callout p,.callout ul{font-size:.88rem;color:var(--text-mid);margin-bottom:0;}
+.callout ul{padding-left:18px;margin-top:6px;}
+.callout li{margin-bottom:3px;}
+
+/* COOKIE TABLE */
+.cookie-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.86rem;}
+.cookie-table th{background:var(--blue-pale);color:var(--blue);font-weight:600;padding:9px 12px;text-align:left;border:1px solid var(--blue-line);}
+.cookie-table td{padding:8px 12px;border:1px solid var(--rule);color:var(--text-mid);vertical-align:top;}
+.cookie-table tr:nth-child(even) td{background:#f4f8fb;}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:2px 9px;border-radius:50px;font-size:.73rem;font-weight:700;}
+.badge.green{background:var(--green-pale);color:var(--green);}
+.badge.red{background:var(--red-pale);color:var(--red);}
+.badge.amber{background:var(--amber-pale);color:var(--amber);}
+.badge.blue{background:var(--blue-pale);color:var(--blue);}
+
+/* FOOTER LINKS */
+.legal-footer-links{margin-top:48px;padding:24px;background:var(--white);border:1px solid var(--rule);border-radius:var(--r-lg);}
+.legal-footer-links-title{font-size:.73rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-light);margin-bottom:14px;}
+.lfl-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.lfl-link{display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:6px;border:1px solid var(--rule);font-size:.84rem;font-weight:500;color:var(--text);transition:border-color .15s,color .15s,background .15s;}
+.lfl-link:hover{border-color:var(--blue-mid);color:var(--blue);background:var(--blue-pale);text-decoration:none;}
+.lfl-dot{width:6px;height:6px;border-radius:50%;background:var(--blue-mid);flex-shrink:0;}
+
+/* FOOTER */
+footer{background:#1E2C30;padding:22px 24px;}
+.footer-inner{max-width:1060px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+.footer-copy{font-size:.8rem;color:rgba(255,255,255,.38);}
+.footer-nav{display:flex;gap:20px;}
+.footer-nav a{font-size:.8rem;color:rgba(255,255,255,.42);transition:color .2s;}
+.footer-nav a:hover{color:rgba(255,255,255,.85);}
+
+@media(max-width:900px){.page-layout{grid-template-columns:1fr;}.toc{position:static;}.lfl-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){.site-nav-links{display:none;}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <a href="index.html" class="site-nav-brand">SanteDesMuqueuses.fr</a>
+    <div class="site-nav-links">
+      <a href="sante-des-muqueuses.html">Muqueuses</a>
+      <a href="secheresse-oculaire.html">Zones du corps</a>
+      <a href="menopause-secheresse-muqueuses.html">Causes</a>
+      <a href="huile-argousier-muqueuses.html">Solutions naturelles</a>
+      <a href="yeux-qui-piquent-et-brulent.html">Symptômes</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Mentions légales</span>
+    </div>
+    <h1>Mentions légales &amp; Politique de cookies</h1>
+    <div class="page-hero-meta">
+      <span class="meta-chip">📄 Page légale</span>
+      <span class="meta-chip">🔄 Consulté le samedi 14 mars 2026 — 17h51</span>
+    </div>
+  </div>
+</div>
+<div class="wave-sep">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:48px;">
+    <path d="M0,24 C360,48 720,0 1080,32 C1260,48 1380,12 1440,24 L1440,48 L0,48 Z" fill="#FAFCFB"/>
+  </svg>
+</div>
+
+<!-- LAYOUT -->
+<div class="page-wrap">
+  <div class="page-layout">
+
+    <!-- CONTENU -->
+    <div class="legal-content">
+
+      <!-- AVERTISSEMENT MÉDICAL - EN PREMIER, BIEN VISIBLE -->
+      <h2 id="avertissement">⚠️ Avertissement médical important</h2>
+
+      <div class="callout red">
+        <div class="callout-title">Ce site ne remplace pas l'avis d'un professionnel de santé</div>
+        <p><strong>SanteDesMuqueuses.fr est un média d'information générale sur la santé des muqueuses.</strong> Les contenus publiés sur ce site — articles, guides, fiches thématiques, FAQ — ont une vocation exclusivement éducative et informative. Ils sont rédigés à partir de sources scientifiques publiques (PubMed, HAS, Vidal, sociétés savantes) et ne constituent en aucun cas :</p>
+        <ul>
+          <li>Un diagnostic médical</li>
+          <li>Une prescription ou recommandation thérapeutique personnalisée</li>
+          <li>Un avis médical ou pharmaceutique individuel</li>
+          <li>Un substitut à une consultation médicale</li>
+        </ul>
+      </div>
+
+      <p>Toute personne présentant des symptômes persistants, douloureux ou inhabituels est <strong>fortement encouragée à consulter un médecin, un spécialiste ou un professionnel de santé qualifié</strong> avant d'entreprendre tout changement alimentaire, de prendre un complément alimentaire ou de modifier un traitement médical en cours.</p>
+
+      <p>En particulier, nous recommandons de consulter sans délai un professionnel de santé si vous présentez :</p>
+      <ul>
+        <li>Une <a href="secheresse-des-muqueuses.html">sécheresse muqueuse</a> touchant simultanément plusieurs zones du corps (yeux, bouche, zone intime) — possible <a href="syndrome-de-sjogren.html">syndrome de Sjögren</a></li>
+        <li>Des symptômes digestifs persistants avec perte de poids, sang dans les selles ou douleurs intenses — voir notre guide sur la <a href="muqueuse-intestinale-fragile.html">muqueuse intestinale fragile</a></li>
+        <li>Une <a href="secheresse-oculaire.html">sécheresse oculaire</a> avec baisse de l'acuité visuelle</li>
+        <li>Des <a href="aphtes-frequents-causes.html">aphtes récurrents</a> ou des lésions muqueuses qui ne cicatrisent pas</li>
+        <li>Une <a href="inflammation-des-muqueuses.html">inflammation muqueuse</a> avec fièvre, fatigue intense ou altération de l'état général</li>
+      </ul>
+
+      <div class="callout amber">
+        <div class="callout-title">En cas d'urgence médicale</div>
+        <p>En cas d'urgence médicale, composez le <strong>15 (SAMU)</strong>, le <strong>18 (pompiers)</strong> ou le <strong>112 (numéro d'urgence européen)</strong>. Ce site n'est pas un service de secours ou d'aide médicale urgente.</p>
+      </div>
+
+      <!-- ÉDITEUR -->
+      <h2 id="editeur">Éditeur du site</h2>
+
+      <table class="info-table">
+        <tr><td>Nom du site</td><td><strong>SanteDesMuqueuses.fr</strong></td></tr>
+        <tr><td>Nature</td><td>Média d'information en santé — site éditorial à vocation pédagogique</td></tr>
+        <tr><td>Responsable éditorial</td><td>Cyril Ragonet</td></tr>
+        <tr><td>Contact éditorial</td><td><a href="mailto:cyril.ragonet@gmail.com">cyril.ragonet@gmail.com</a></td></tr>
+        <tr><td>Téléphone</td><td>06 95 36 83 83</td></tr>
+        <tr><td>Siège</td><td>13100 Aix-en-Provence, France</td></tr>
+        <tr><td>Site web</td><td>www.santedesmuqueuses.fr</td></tr>
+        <tr><td>Directeur de publication</td><td>Cyril Ragonet</td></tr>
+      </table>
+
+      <p>SanteDesMuqueuses.fr est un média indépendant dédié à l'information sur la <a href="sante-des-muqueuses.html">santé des muqueuses</a>. Il couvre des thématiques telles que la <a href="secheresse-des-muqueuses.html">sécheresse muqueuse</a>, l'<a href="hydratation-des-muqueuses.html">hydratation des muqueuses</a>, la <a href="barriere-muqueuse-role.html">fonction barrière</a>, le <a href="microbiote-des-muqueuses.html">microbiote muqueux</a>, ou encore les <a href="regenerer-les-muqueuses-naturellement.html">solutions naturelles pour régénérer les muqueuses</a>. L'ensemble des contenus est produit à des fins d'information générale et de sensibilisation, sans prétention médicale individuelle.</p>
+
+      <!-- HÉBERGEMENT -->
+      <h2 id="hebergement">Hébergement</h2>
+      <p>Ce site est hébergé par un prestataire technique tiers. Les coordonnées complètes de l'hébergeur sont disponibles sur demande à l'adresse <a href="mailto:cyril.ragonet@gmail.com">cyril.ragonet@gmail.com</a>.</p>
+
+      <!-- PROPRIÉTÉ INTELLECTUELLE -->
+      <h2 id="propriete">Propriété intellectuelle</h2>
+      <p>L'ensemble des contenus présents sur le site www.santedesmuqueuses.fr — textes, articles, guides, structure éditoriale, code, logos et identité graphique — est la propriété exclusive de SanteDesMuqueuses.fr, sauf mention contraire explicite.</p>
+      <p>Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans autorisation écrite préalable.</p>
+      <p>Toute exploitation non autorisée constitue une contrefaçon et est passible de poursuites judiciaires conformément aux dispositions des articles L.335-2 et suivants du Code de la propriété intellectuelle.</p>
+      <p>Les sources scientifiques citées dans les articles (PubMed, HAS, Vidal, sociétés savantes) restent la propriété de leurs auteurs et institutions respectifs. Leur citation est effectuée dans le respect des droits d'auteur et à titre de référencement informatif.</p>
+
+      <!-- LIMITATION DE RESPONSABILITÉ -->
+      <h2 id="responsabilite">Limitation de responsabilité</h2>
+
+      <div class="callout blue">
+        <div class="callout-title">SanteDesMuqueuses.fr est un média d'information — pas un prestataire médical</div>
+        <p>Les informations publiées sur ce site sont fournies à titre informatif et pédagogique uniquement. Elles ne sauraient engager la responsabilité de SanteDesMuqueuses.fr en cas de mauvaise interprétation, d'utilisation inappropriée ou de tout dommage résultant de leur application sans avis médical préalable.</p>
+      </div>
+
+      <p>SanteDesMuqueuses.fr s'efforce d'assurer l'exactitude et la mise à jour régulière des informations diffusées. Toutefois, la médecine et la recherche scientifique évoluent constamment : certaines informations peuvent être partiellement obsolètes entre deux mises à jour éditoriales. SanteDesMuqueuses.fr ne peut garantir à tout instant l'exhaustivité, la complétude ou l'actualité absolue de l'ensemble des contenus publiés.</p>
+
+      <h3>Responsabilité concernant les partenaires et produits mentionnés</h3>
+      <p><strong>SanteDesMuqueuses.fr décline expressément toute responsabilité</strong> concernant :</p>
+      <ul>
+        <li>Les produits, compléments alimentaires, dispositifs médicaux ou services présentés ou évoqués dans les contenus éditoriaux ou via des liens partenaires ;</li>
+        <li>La qualité, la conformité, l'efficacité ou l'innocuité des produits mis en avant par les annonceurs ou partenaires ;</li>
+        <li>Tout effet indésirable, dommage, préjudice direct ou indirect résultant de l'achat, de l'utilisation ou de la consommation d'un produit ou service présenté sur ce site ou sur des sites tiers accessibles via des liens ;</li>
+        <li>Les contenus, pratiques commerciales ou politiques de confidentialité des sites tiers vers lesquels des liens hypertextes sont proposés.</li>
+      </ul>
+      <p>La mention d'un produit, d'une marque ou d'un complément alimentaire dans un article éditorial (à titre d'exemple illustratif ou dans le cadre d'un partenariat) ne constitue pas une recommandation médicale, ni une garantie d'efficacité ou de sécurité pour votre situation personnelle. <strong>Consultez toujours un professionnel de santé avant d'utiliser un complément alimentaire</strong>, particulièrement en cas de grossesse, d'allaitement, de traitement médical en cours ou de pathologie avérée.</p>
+
+      <div class="callout amber">
+        <div class="callout-title">À propos des compléments alimentaires</div>
+        <p>Les compléments alimentaires mentionnés sur ce site (huile d'argousier, oméga-3, oméga-7, zinc, glutamine, probiotiques, vitamine A, etc.) ne sont pas des médicaments. Ils ne peuvent pas diagnostiquer, traiter, guérir ou prévenir une maladie. Leur utilisation ne saurait se substituer à un traitement médical prescrit. En cas de doute, consultez votre médecin ou votre pharmacien.</p>
+      </div>
+
+      <!-- DONNÉES PERSONNELLES -->
+      <h2 id="donnees">Données personnelles — RGPD</h2>
+      <p><strong>Notre engagement :</strong> SanteDesMuqueuses.fr ne collecte aucune donnée personnelle à des fins commerciales tierces. Aucune donnée n'est vendue, louée ou cédée à un tiers. Les informations que vous nous transmettez via le formulaire de contact ou d'inscription à la newsletter sont utilisées exclusivement pour répondre à votre demande ou pour vous envoyer les communications auxquelles vous avez souscrit.</p>
+      <p>Conformément au Règlement Général sur la Protection des Données (RGPD — UE 2016/679) et à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous disposez des droits suivants :</p>
+      <ul>
+        <li><strong>Droit d'accès</strong> — consulter les données vous concernant.</li>
+        <li><strong>Droit de rectification</strong> — corriger des données inexactes.</li>
+        <li><strong>Droit à l'effacement</strong> — demander la suppression de vos données.</li>
+        <li><strong>Droit d'opposition</strong> — vous opposer à un traitement.</li>
+        <li><strong>Droit à la portabilité</strong> — récupérer vos données dans un format lisible.</li>
+        <li><strong>Droit de retrait du consentement</strong> — vous désabonner à tout moment de la newsletter.</li>
+      </ul>
+      <p>Pour exercer ces droits, contactez-nous à l'adresse : <a href="mailto:cyril.ragonet@gmail.com">cyril.ragonet@gmail.com</a>. Votre demande sera traitée dans un délai maximum de 30 jours. En cas de réclamation non résolue, vous pouvez saisir la CNIL — <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>.</p>
+
+      <!-- COOKIES -->
+      <h2 id="cookies">Politique de cookies</h2>
+      <p>Un cookie est un petit fichier texte déposé sur votre navigateur lors de la visite d'un site web. SanteDesMuqueuses.fr s'engage à une utilisation transparente et strictement limitée des cookies.</p>
+
+      <table class="cookie-table">
+        <thead>
+          <tr><th>Type de cookie</th><th>Détail</th><th>Statut</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Analytique</strong></td>
+            <td>Google Tag Manager — outil de gestion de balises permettant le suivi anonymisé et agrégé des pages visitées. Les données ne permettent pas de vous identifier personnellement et sont utilisées uniquement pour améliorer le contenu.</td>
+            <td><span class="badge amber">Analytique</span></td>
+          </tr>
+          <tr>
+            <td><strong>Cookies publicitaires</strong></td>
+            <td>SanteDesMuqueuses.fr n'utilise aucun cookie publicitaire, pixel de retargeting ou technologie de suivi à des fins de publicité ciblée.</td>
+            <td><span class="badge red">Non utilisé</span></td>
+          </tr>
+          <tr>
+            <td><strong>Réseaux sociaux</strong></td>
+            <td>Aucun bouton de partage social intégrant des traceurs tiers (Facebook, LinkedIn, X, etc.) n'est présent sur ce site.</td>
+            <td><span class="badge red">Non utilisé</span></td>
+          </tr>
+          <tr>
+            <td><strong>Vente de données</strong></td>
+            <td>Les données de navigation ne sont jamais vendues, louées ou transmises à des tiers à des fins commerciales. Durée de conservation maximale : 14 mois (paramètres Google Analytics).</td>
+            <td><span class="badge green">Jamais</span></td>
+          </tr>
+          <tr>
+            <td><strong>Techniques essentiels</strong></td>
+            <td>Cookies indispensables au fonctionnement du site. Ils ne collectent aucune donnée personnelle identifiable et ne nécessitent pas de consentement explicite (art. 82 loi Informatique et Libertés).</td>
+            <td><span class="badge blue">Fonctionnel</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Gérer vos préférences de cookies</h3>
+      <p>Vous pouvez à tout moment refuser, limiter ou supprimer les cookies déposés sur votre navigateur via ses paramètres :</p>
+      <ul>
+        <li><strong>Chrome</strong> : Paramètres → Confidentialité → Cookies</li>
+        <li><strong>Firefox</strong> : Paramètres → Vie privée → Cookies</li>
+        <li><strong>Safari</strong> : Préférences → Confidentialité → Cookies</li>
+        <li><strong>Edge</strong> : Paramètres → Confidentialité → Cookies</li>
+      </ul>
+      <p>La désactivation des cookies analytiques n'affecte pas votre navigation sur le site. Pour toute question, écrivez-nous à <a href="mailto:cyril.ragonet@gmail.com">cyril.ragonet@gmail.com</a>.</p>
+
+      <!-- LIGNE ÉDITORIALE & PARTENAIRES -->
+      <h2 id="editorial">Ligne éditoriale & Partenaires</h2>
+
+      <div class="callout green">
+        <div class="callout-title">SanteDesMuqueuses.fr : un média d'information, pas un prescripteur</div>
+        <p>SanteDesMuqueuses.fr est avant tout un <strong>média éditorial d'information en santé</strong>. Sa mission est d'expliquer, de vulgariser et d'orienter — jamais de prescrire ou de vendre. La ligne éditoriale est fondée sur la rigueur scientifique, la transparence et le respect du lecteur. Consultez notre <a href="ligne-editoriale.html">page Ligne éditoriale</a> pour en savoir plus sur notre approche.</p>
+      </div>
+
+      <h3>Transparence sur les relations commerciales</h3>
+      <p>SanteDesMuqueuses.fr peut entretenir des <strong>relations commerciales avec des partenaires</strong> (marques, fabricants de compléments alimentaires, prestataires de santé naturelle) sous différentes formes : liens affiliés, contenus sponsorisés identifiés, partenariats éditoriaux. Ces relations commerciales <strong>n'influencent pas la ligne éditoriale indépendante</strong> du site et font l'objet d'une déclaration transparente dans les contenus concernés.</p>
+      <p>Consultez la liste complète de nos partenaires et notre politique de transparence sur la <a href="partenaires.html">page Partenaires</a>.</p>
+
+      <h3>Responsabilité rédactionnelle</h3>
+      <p>La responsabilité éditoriale de SanteDesMuqueuses.fr est assumée par <strong>Cyril Ragonet</strong>, directeur de publication, joignable à <a href="mailto:cyril.ragonet@gmail.com">cyril.ragonet@gmail.com</a> ou au 06 95 36 83 83.</p>
+      <p>SanteDesMuqueuses.fr ne saurait être tenu responsable des conséquences de l'utilisation des informations publiées sur ce site, ni des produits et services présentés par des partenaires commerciaux. Le lecteur est seul responsable de l'utilisation qu'il fait des informations consultées et de toute décision médicale ou d'achat qui en découle.</p>
+
+      <!-- DROIT APPLICABLE -->
+      <h2 id="droit">Droit applicable & litiges</h2>
+      <p>Les présentes mentions légales sont soumises au <strong>droit français</strong>. En cas de litige relatif à l'interprétation ou à l'exécution des présentes, les parties s'engagent à rechercher une solution amiable avant tout recours judiciaire. À défaut d'accord amiable, les tribunaux compétents seront ceux du ressort du siège social de SanteDesMuqueuses.fr.</p>
+
+      <!-- LIENS UTILES -->
+      <div class="legal-footer-links">
+        <div class="legal-footer-links-title">Pages utiles du site</div>
+        <div class="lfl-grid">
+          <a href="ligne-editoriale.html" class="lfl-link"><span class="lfl-dot"></span>Ligne éditoriale</a>
+          <a href="partenaires.html" class="lfl-link"><span class="lfl-dot"></span>Partenaires</a>
+          <a href="plan.html" class="lfl-link"><span class="lfl-dot"></span>Plan du site</a>
+          <a href="index.html" class="lfl-link"><span class="lfl-dot"></span>Accueil</a>
+          <a href="sante-des-muqueuses.html" class="lfl-link"><span class="lfl-dot"></span>Santé des muqueuses</a>
+          <a href="proteger-ses-muqueuses.html" class="lfl-link"><span class="lfl-dot"></span>Protéger ses muqueuses</a>
+        </div>
+      </div>
+
+    </div><!-- /legal-content -->
+
+    <!-- TOC -->
+    <aside>
+      <nav class="toc" aria-label="Sommaire">
+        <div class="toc-title">Sommaire</div>
+        <div class="toc-list">
+          <a href="#avertissement" class="toc-link">⚠️ Avertissement médical</a>
+          <a href="#editeur" class="toc-link">Éditeur du site</a>
+          <a href="#hebergement" class="toc-link">Hébergement</a>
+          <a href="#propriete" class="toc-link">Propriété intellectuelle</a>
+          <a href="#responsabilite" class="toc-link">Limitation de responsabilité</a>
+          <a href="#donnees" class="toc-link">Données personnelles</a>
+          <a href="#cookies" class="toc-link">Politique de cookies</a>
+          <a href="#editorial" class="toc-link">Ligne éditoriale & Partenaires</a>
+          <a href="#droit" class="toc-link">Droit applicable</a>
+        </div>
+      </nav>
+    </aside>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">© SanteDesMuqueuses.fr 2026 — Responsable : Cyril Ragonet</p>
+    <nav class="footer-nav">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="ligne-editoriale.html">Ligne éditoriale</a>
+      <a href="partenaires.html">Partenaires</a>
+      <a href="plan.html">Plan du site</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
