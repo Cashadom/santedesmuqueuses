@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan du site – SanteDesMuqueuses.fr</title>
+  <meta name="description" content="Plan du site SanteDesMuqueuses.fr — 50 guides classés par thème : muqueuses, zones du corps, causes médicales, solutions naturelles, symptômes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --blue:#2C6E9E;--blue-mid:#3F8FBE;--blue-pale:#EBF4FA;--blue-line:#C8DFF0;
+      --green:#3D7A40;--green-mid:#5FA463;--green-pale:#EAF4EA;
+      --amber:#C8780A;--amber-pale:#FEF4E0;
+      --purple:#5B4FA0;--purple-pale:#F0EEF8;
+      --slate:#3A5560;--slate-pale:#EFF3F5;
+      --bg:#FAFCFB;--white:#FFFFFF;--rule:#E2EAEC;
+      --text:#1E2C30;--text-mid:#4A5E64;--text-light:#7A9098;
+      --serif:'Lora',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{
+      font-family:var(--sans);
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none;}
+
+    /* ── HEADER STRIP ── */
+    .page-header{
+      background: linear-gradient(135deg, var(--blue) 0%, #1e5078 100%);
+      padding:52px 28px 44px;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .page-header::before{
+      content:'';
+      position:absolute;inset:0;
+      background:
+        radial-gradient(circle at 15% 50%, rgba(255,255,255,.07) 0%, transparent 55%),
+        radial-gradient(circle at 85% 30%, rgba(95,164,99,.18) 0%, transparent 50%);
+      pointer-events:none;
+    }
+    .page-header-inner{position:relative;}
+    .page-header-eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+      color:rgba(255,255,255,.65);margin-bottom:14px;
+    }
+    .page-header-eyebrow a{color:rgba(255,255,255,.65);transition:color .2s;}
+    .page-header-eyebrow a:hover{color:#fff;}
+    .eyebrow-sep{opacity:.4;}
+    .page-header h1{
+      font-family:var(--serif);
+      font-size:clamp(1.8rem,3.5vw,2.6rem);
+      font-weight:700;
+      color:#fff;
+      line-height:1.2;
+      margin-bottom:12px;
+    }
+    .page-header-sub{
+      font-size:.98rem;
+      color:rgba(255,255,255,.72);
+      max-width:520px;
+      margin:0 auto;
+    }
+    .page-header-count{
+      display:inline-flex;align-items:center;gap:6px;
+      margin-top:20px;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.2);
+      padding:6px 16px;border-radius:50px;
+      font-size:.8rem;font-weight:600;color:rgba(255,255,255,.85);
+    }
+
+    /* ── WAVE ── */
+    .wave{display:block;width:100%;overflow:hidden;line-height:0;background:var(--blue);}
+    .wave svg{display:block;width:100%;}
+
+    /* ── LAYOUT ── */
+    .wrap{max-width:1060px;margin:0 auto;padding:0 24px;}
+    .main{padding:60px 24px 80px;}
+
+    /* ── SILO BLOCK ── */
+    .silo{margin-bottom:44px;}
+    .silo:last-of-type{margin-bottom:0;}
+
+    .silo-head{
+      display:flex;align-items:center;gap:14px;
+      margin-bottom:18px;
+    }
+    .silo-badge{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:36px;height:36px;border-radius:9px;
+      font-size:.7rem;font-weight:700;letter-spacing:.04em;
+      flex-shrink:0;
+    }
+    .silo-head-text{}
+    .silo-title{
+      font-family:var(--serif);
+      font-weight:700;font-size:1.15rem;
+      line-height:1.2;
+      display:block;
+    }
+    .silo-desc{font-size:.82rem;color:var(--text-light);}
+
+    /* ── LINK GRID ── */
+    .link-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+      gap:8px;
+    }
+    .page-link{
+      display:flex;align-items:center;gap:8px;
+      padding:9px 14px;
+      border-radius:8px;
+      border:1px solid;
+      font-size:.86rem;font-weight:500;
+      transition:background .15s,color .15s,border-color .15s,transform .1s;
+    }
+    .page-link:hover{transform:translateX(2px);}
+    .page-link-dot{
+      width:6px;height:6px;border-radius:50%;flex-shrink:0;
+    }
+    .page-link-q{
+      margin-left:auto;flex-shrink:0;
+      font-size:.8rem;font-weight:700;opacity:.45;
+    }
+
+    /* Silo 1 — bleu */
+    .s1 .silo-badge{background:var(--blue-pale);color:var(--blue);}
+    .s1 .silo-title{color:var(--blue);}
+    .s1 .page-link{color:var(--blue);border-color:var(--blue-line);background:var(--blue-pale);}
+    .s1 .page-link:hover{background:var(--blue);color:#fff;border-color:var(--blue);}
+    .s1 .page-link-dot{background:var(--blue-mid);}
+
+    /* Silo 2 — vert */
+    .s2 .silo-badge{background:var(--green-pale);color:var(--green);}
+    .s2 .silo-title{color:var(--green);}
+    .s2 .page-link{color:var(--green);border-color:#B8DCBA;background:var(--green-pale);}
+    .s2 .page-link:hover{background:var(--green);color:#fff;border-color:var(--green);}
+    .s2 .page-link-dot{background:var(--green-mid);}
+
+    /* Silo 3 — ambre */
+    .s3 .silo-badge{background:var(--amber-pale);color:var(--amber);}
+    .s3 .silo-title{color:var(--amber);}
+    .s3 .page-link{color:var(--amber);border-color:#F0D09A;background:var(--amber-pale);}
+    .s3 .page-link:hover{background:var(--amber);color:#fff;border-color:var(--amber);}
+    .s3 .page-link-dot{background:var(--amber);}
+
+    /* Silo 4 — vert foncé */
+    .s4 .silo-badge{background:var(--green-pale);color:var(--green);}
+    .s4 .silo-title{color:var(--green);}
+    .s4 .page-link{color:var(--green);border-color:#B8DCBA;background:#f4fbf4;}
+    .s4 .page-link:hover{background:var(--green-mid);color:#fff;}
+    .s4 .page-link-dot{background:var(--green-mid);}
+
+    /* Silo 5 — violet */
+    .s5 .silo-badge{background:var(--purple-pale);color:var(--purple);}
+    .s5 .silo-title{color:var(--purple);}
+    .s5 .page-link{color:var(--purple);border-color:#CAC4F0;background:var(--purple-pale);}
+    .s5 .page-link:hover{background:var(--purple);color:#fff;}
+    .s5 .page-link-dot{background:var(--purple);}
+
+    /* Silo légal — slate */
+    .slegal .silo-badge{background:var(--slate-pale);color:var(--slate);}
+    .slegal .silo-title{color:var(--slate);}
+    .slegal .page-link{color:var(--slate);border-color:#C8D8DC;background:var(--slate-pale);}
+    .slegal .page-link:hover{background:var(--slate);color:#fff;}
+    .slegal .page-link-dot{background:var(--slate);}
+
+    /* ── DIVIDER ── */
+    .silo-divider{
+      border:none;
+      border-top:1px solid var(--rule);
+      margin:40px 0;
+    }
+
+    /* ── FOOTER ── */
+    footer{
+      background:#1E2C30;
+      padding:28px 24px;
+    }
+    .footer-inner{
+      max-width:1060px;margin:0 auto;
+      display:flex;align-items:center;justify-content:space-between;
+      gap:16px;flex-wrap:wrap;
+    }
+    .footer-copy{font-size:.82rem;color:rgba(255,255,255,.38);}
+    .footer-nav{display:flex;gap:20px;flex-wrap:wrap;}
+    .footer-nav a{
+      font-size:.82rem;color:rgba(255,255,255,.45);
+      transition:color .2s;
+    }
+    .footer-nav a:hover{color:rgba(255,255,255,.85);}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:600px){
+      .link-grid{grid-template-columns:1fr;}
+      .footer-inner{flex-direction:column;align-items:flex-start;gap:12px;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-header-eyebrow">
+      <a href="index.html">SanteDesMuqueuses.fr</a>
+      <span class="eyebrow-sep">›</span>
+      Plan du site
+    </div>
+    <h1>Plan du site</h1>
+    <p class="page-header-sub">Des guides thématiques répartis en 5 silos médicaux, sourcés et mis à jour régulièrement.</p>
+    <div class="page-header-count">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      50 pages · 5 silos
+    </div>
+  </div>
+</div>
+
+<!-- WAVE -->
+<div class="wave">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:48px;">
+    <path d="M0,24 C360,48 720,0 1080,32 C1260,48 1380,12 1440,24 L1440,48 L0,48 Z" fill="#FAFCFB"/>
+  </svg>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+  <div class="wrap">
+
+    <!-- SILO 1 -->
+    <section class="silo s1" id="silo-1">
+      <div class="silo-head">
+        <div class="silo-badge">S01</div>
+        <div class="silo-head-text">
+          <span class="silo-title">Muqueuses — Fondations</span>
+          <span class="silo-desc">Rôle, hydratation, barrière, microbiote, syndrome sec</span>
+        </div>
+      </div>
+      <div class="link-grid">
+        <a href="sante-des-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Santé des muqueuses
+        </a>
+        <a href="secheresse-des-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Sécheresse des muqueuses
+        </a>
+        <a href="hydratation-des-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Hydratation des muqueuses
+        </a>
+        <a href="regenerer-les-muqueuses-naturellement.html" class="page-link">
+          <span class="page-link-dot"></span>Régénérer les muqueuses naturellement
+        </a>
+        <a href="inflammation-des-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Inflammation des muqueuses
+        </a>
+        <a href="muqueuses-fragiles-causes.html" class="page-link">
+          <span class="page-link-dot"></span>Muqueuses fragiles — causes
+        </a>
+        <a href="barriere-muqueuse-role.html" class="page-link">
+          <span class="page-link-dot"></span>Barrière muqueuse — rôle
+        </a>
+        <a href="microbiote-des-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Microbiote des muqueuses
+        </a>
+        <a href="syndrome-sec-global.html" class="page-link">
+          <span class="page-link-dot"></span>Syndrome sec — vue globale
+        </a>
+        <a href="proteger-ses-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Protéger ses muqueuses
+        </a>
+      </div>
+    </section>
+
+    <hr class="silo-divider" />
+
+    <!-- SILO 2 -->
+    <section class="silo s2" id="silo-2">
+      <div class="silo-head">
+        <div class="silo-badge">S02</div>
+        <div class="silo-head-text">
+          <span class="silo-title">Zones du corps</span>
+          <span class="silo-desc">Muqueuses oculaires, buccales, vaginales, nasales, digestives, ORL</span>
+        </div>
+      </div>
+      <div class="link-grid">
+        <a href="secheresse-oculaire.html" class="page-link">
+          <span class="page-link-dot"></span>Sécheresse oculaire
+        </a>
+        <a href="bouche-seche.html" class="page-link">
+          <span class="page-link-dot"></span>Bouche sèche
+        </a>
+        <a href="secheresse-intime.html" class="page-link">
+          <span class="page-link-dot"></span>Sécheresse intime
+        </a>
+        <a href="secheresse-nasale.html" class="page-link">
+          <span class="page-link-dot"></span>Sécheresse nasale
+        </a>
+        <a href="muqueuse-intestinale-fragile.html" class="page-link">
+          <span class="page-link-dot"></span>Muqueuse intestinale fragile
+        </a>
+        <a href="gorge-seche.html" class="page-link">
+          <span class="page-link-dot"></span>Gorge sèche
+        </a>
+        <a href="levres-gercees-chroniques.html" class="page-link">
+          <span class="page-link-dot"></span>Lèvres gercées chroniques
+        </a>
+        <a href="atrophie-muqueuse-vaginale.html" class="page-link">
+          <span class="page-link-dot"></span>Atrophie muqueuse vaginale
+        </a>
+        <a href="inflammation-muqueuse-digestive.html" class="page-link">
+          <span class="page-link-dot"></span>Inflammation muqueuse digestive
+        </a>
+        <a href="muqueuse-orl-fragile.html" class="page-link">
+          <span class="page-link-dot"></span>Muqueuse ORL fragile
+        </a>
+      </div>
+    </section>
+
+    <hr class="silo-divider" />
+
+    <!-- SILO 3 -->
+    <section class="silo s3" id="silo-3">
+      <div class="silo-head">
+        <div class="silo-badge">S03</div>
+        <div class="silo-head-text">
+          <span class="silo-title">Causes médicales</span>
+          <span class="silo-desc">Ménopause, médicaments, maladies auto-immunes, carences, stress</span>
+        </div>
+      </div>
+      <div class="link-grid">
+        <a href="menopause-secheresse-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Ménopause et sécheresse des muqueuses
+        </a>
+        <a href="medicaments-qui-assechent-les-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Médicaments qui assèchent les muqueuses
+        </a>
+        <a href="stress-et-secheresse-corporelle.html" class="page-link">
+          <span class="page-link-dot"></span>Stress et sécheresse corporelle
+        </a>
+        <a href="deshydratation-chronique-symptomes.html" class="page-link">
+          <span class="page-link-dot"></span>Déshydratation chronique <span class="page-link-q">?</span>
+        </a>
+        <a href="maladies-auto-immunes-syndrome-sec.html" class="page-link">
+          <span class="page-link-dot"></span>Maladies auto-immunes et syndrome sec
+        </a>
+        <a href="syndrome-de-sjogren.html" class="page-link">
+          <span class="page-link-dot"></span>Syndrome de Sjögren <span class="page-link-q">?</span>
+        </a>
+        <a href="carence-vitamine-a-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Carence vitamine A et muqueuses <span class="page-link-q">?</span>
+        </a>
+        <a href="carence-omega-3-secheresse.html" class="page-link">
+          <span class="page-link-dot"></span>Carence oméga‑3 et sécheresse <span class="page-link-q">?</span>
+        </a>
+        <a href="pollution-et-irritation-muqueuse.html" class="page-link">
+          <span class="page-link-dot"></span>Pollution et irritation muqueuse
+        </a>
+        <a href="ecrans-et-secheresse-oculaire.html" class="page-link">
+          <span class="page-link-dot"></span>Écrans et sécheresse oculaire
+        </a>
+      </div>
+    </section>
+
+    <hr class="silo-divider" />
+
+    <!-- SILO 4 -->
+    <section class="silo s4" id="silo-4">
+      <div class="silo-head">
+        <div class="silo-badge">S04</div>
+        <div class="silo-head-text">
+          <span class="silo-title">Solutions naturelles</span>
+          <span class="silo-desc">Argousier, oméga‑7, probiotiques, zinc, glutamine, aloe vera</span>
+        </div>
+      </div>
+      <div class="link-grid">
+        <a href="huile-argousier-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Huile d'argousier et muqueuses
+        </a>
+        <a href="omega-7-bienfaits-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Oméga‑7 — bienfaits muqueuses
+        </a>
+        <a href="probiotiques-sante-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Probiotiques et santé des muqueuses
+        </a>
+        <a href="aloe-vera-muqueuse-digestive.html" class="page-link">
+          <span class="page-link-dot"></span>Aloe vera — muqueuse digestive
+        </a>
+        <a href="glutamine-intestin-permeable.html" class="page-link">
+          <span class="page-link-dot"></span>Glutamine — intestin perméable <span class="page-link-q">?</span>
+        </a>
+        <a href="zinc-reparation-muqueuse.html" class="page-link">
+          <span class="page-link-dot"></span>Zinc — réparation muqueuse
+        </a>
+        <a href="vitamine-a-regeneration-muqueuse.html" class="page-link">
+          <span class="page-link-dot"></span>Vitamine A — régénération muqueuse
+        </a>
+        <a href="comment-hydrater-les-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Comment hydrater les muqueuses <span class="page-link-q">?</span>
+        </a>
+        <a href="alimentation-protectrice-muqueuses.html" class="page-link">
+          <span class="page-link-dot"></span>Alimentation protectrice des muqueuses
+        </a>
+        <a href="plantes-secheresse-intime.html" class="page-link">
+          <span class="page-link-dot"></span>Plantes pour la sécheresse intime
+        </a>
+      </div>
+    </section>
+
+    <hr class="silo-divider" />
+
+    <!-- SILO 5 -->
+    <section class="silo s5" id="silo-5">
+      <div class="silo-head">
+        <div class="silo-badge">S05</div>
+        <div class="silo-head-text">
+          <span class="silo-title">Symptômes fréquents</span>
+          <span class="silo-desc">Yeux qui piquent, langue sèche, nez sec, douleurs, aphtes…</span>
+        </div>
+      </div>
+      <div class="link-grid">
+        <a href="yeux-qui-piquent-et-brulent.html" class="page-link">
+          <span class="page-link-dot"></span>Yeux qui piquent et brûlent <span class="page-link-q">?</span>
+        </a>
+        <a href="sensation-sable-dans-les-yeux.html" class="page-link">
+          <span class="page-link-dot"></span>Sensation de sable dans les yeux <span class="page-link-q">?</span>
+        </a>
+        <a href="langue-seche-causes.html" class="page-link">
+          <span class="page-link-dot"></span>Langue sèche — causes <span class="page-link-q">?</span>
+        </a>
+        <a href="nez-sec-la-nuit.html" class="page-link">
+          <span class="page-link-dot"></span>Nez sec la nuit <span class="page-link-q">?</span>
+        </a>
+        <a href="douleur-rapport-secheresse.html" class="page-link">
+          <span class="page-link-dot"></span>Douleur rapport et sécheresse <span class="page-link-q">?</span>
+        </a>
+        <a href="ballonnements-intestin-permeable.html" class="page-link">
+          <span class="page-link-dot"></span>Ballonnements — intestin perméable <span class="page-link-q">?</span>
+        </a>
+        <a href="aphtes-frequents-causes.html" class="page-link">
+          <span class="page-link-dot"></span>Aphtes fréquents — causes <span class="page-link-q">?</span>
+        </a>
+        <a href="gorge-irritee-chronique.html" class="page-link">
+          <span class="page-link-dot"></span>Gorge irritée chronique <span class="page-link-q">?</span>
+        </a>
+        <a href="irritation-vulvaire-sans-infection.html" class="page-link">
+          <span class="page-link-dot"></span>Irritation vulvaire sans infection <span class="page-link-q">?</span>
+        </a>
+        <a href="salive-epaisse-symptomes.html" class="page-link">
+          <span class="page-link-dot"></span>Salive épaisse — symptômes <span class="page-link-q">?</span>
+        </a>
+      </div>
+    </section>
+
+    <hr class="silo-divider" />
+
+    <!-- LÉGAL -->
+    <section class="silo slegal" id="legal">
+      <div class="silo-head">
+        <div class="silo-badge">⚖</div>
+        <div class="silo-head-text">
+          <span class="silo-title">Pages légales & éditoriales</span>
+          <span class="silo-desc">Mentions légales, politique éditoriale, partenaires</span>
+        </div>
+      </div>
+      <div class="link-grid">
+        <a href="mentions-legales.html" class="page-link">
+          <span class="page-link-dot"></span>Mentions légales
+        </a>
+        <a href="ligne-editoriale.html" class="page-link">
+          <span class="page-link-dot"></span>Ligne éditoriale
+        </a>
+        <a href="partenaires.html" class="page-link">
+          <span class="page-link-dot"></span>Partenaires
+        </a>
+        <a href="index.html" class="page-link">
+          <span class="page-link-dot"></span>Accueil
+        </a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">© SanteDesMuqueuses.fr 2026</p>
+    <nav class="footer-nav" aria-label="Liens légaux">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="ligne-editoriale.html">Ligne éditoriale</a>
+      <a href="partenaires.html">Partenaires</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

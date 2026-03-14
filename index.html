@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SanteDesMuqueuses.fr – Guide scientifique & solutions naturelles</title>
+  <meta name="description" content="Comprendre et réparer les muqueuses naturellement. Sécheresse oculaire, intime, nasale, digestive : causes, protocoles validés, solutions naturelles sourcées." />
+  <meta property="og:title" content="SanteDesMuqueuses.fr – Guide scientifique & solutions naturelles" />
+  <meta property="og:description" content="Comprendre et réparer les muqueuses naturellement. Causes, protocoles validés, solutions sourcées." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SanteDesMuqueuses.fr","url":"https://www.santedesmuqueuses.fr","description":"Guide scientifique sur la santé des muqueuses.","potentialAction":{"@type":"SearchAction","target":"https://www.santedesmuqueuses.fr/recherche?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"SanteDesMuqueuses.fr","url":"https://www.santedesmuqueuses.fr","logo":"https://www.santedesmuqueuses.fr/logo.png"}</script>
+  <style>
+    :root{
+      --blue:#2C6E9E;--blue-mid:#3F8FBE;--blue-pale:#EBF4FA;--blue-line:#C8DFF0;
+      --green:#3D7A40;--green-mid:#5FA463;--green-pale:#EAF4EA;
+      --amber:#C8780A;--amber-pale:#FEF4E0;
+      --bg:#FAFCFB;--white:#FFFFFF;--rule:#E2EAEC;
+      --text:#1E2C30;--text-mid:#4A5E64;--text-light:#7A9098;
+      --serif:'Lora',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;
+      --r:8px;--r-lg:14px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+    a{color:inherit;text-decoration:none;}
+    img{display:block;max-width:100%;}
+    ul{list-style:none;}
+    button,input{font-family:inherit;}
+
+    .wrap{max-width:1160px;margin:0 auto;padding:0 28px;}
+
+   /* HEADER */
+#site-header{
+    position:sticky;
+    top:0;
+    z-index:200;
+    background:var(--white);
+    border-bottom:1px solid var(--rule);
+}
+
+.header-inner{
+    display:flex;
+    align-items:center;
+    height:90px; /* ↑ on augmente un peu la hauteur du header */
+    gap:0;
+}
+
+.header-brand{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex-shrink:0;
+    padding-right:40px;
+    border-right:1px solid var(--rule);
+}
+
+/* ✅ LOGO PLUS GRAND */
+.header-brand img{
+    height:170px;
+    width:auto;
+}
+
+.header-brand-fallback{
+    display:none;
+    align-items:center;
+    gap:14px;
+}
+
+.header-brand-fallback svg{
+    height:100px;
+    width:100px;
+}
+
+.brand-text{line-height:1.2;}
+
+.brand-name{
+    font-family:var(--serif);
+    font-weight:700;
+    font-size:1.2rem;
+    color:var(--blue);
+    display:block;
+}
+
+.brand-baseline{
+    font-size:.72rem;
+    font-weight:500;
+    color:var(--text-light);
+    letter-spacing:.04em;
+    text-transform:uppercase;
+}
+
+.header-nav{
+    display:flex;
+    align-items:center;
+    gap:2px;
+    padding-left:32px;
+    flex:1;
+}
+
+.nav-item{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    padding:7px 12px;
+    border-radius:6px;
+    font-size:.87rem;
+    font-weight:500;
+    color:var(--text-mid);
+    transition:background .15s,color .15s;
+    white-space:nowrap;
+}
+
+.nav-item svg{opacity:.45;flex-shrink:0;}
+
+.nav-item:hover{
+    background:var(--blue-pale);
+    color:var(--blue);
+}
+
+.header-search{
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:var(--bg);
+    border:1.5px solid var(--rule);
+    border-radius:24px;
+    padding:7px 16px;
+    transition:border-color .2s;
+}
+
+.header-search:focus-within{border-color:var(--blue-mid);}
+
+.header-search svg{
+    color:var(--text-light);
+    flex-shrink:0;
+}
+
+.header-search input{
+    border:none;
+    background:transparent;
+    font-size:.87rem;
+    color:var(--text);
+    outline:none;
+    width:155px;
+}
+
+.header-search input::placeholder{color:var(--text-light);}
+
+    /* HERO */
+    #hero{background:var(--white);border-bottom:1px solid var(--rule);padding:72px 28px 64px;position:relative;overflow:hidden;}
+    #hero::before{content:'';position:absolute;top:-80px;right:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,var(--blue-pale) 0%,transparent 68%);pointer-events:none;}
+    #hero::after{content:'';position:absolute;bottom:-60px;left:5%;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,var(--green-pale) 0%,transparent 68%);pointer-events:none;}
+    .hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 370px;gap:60px;align-items:center;position:relative;}
+    .hero-eyebrow{display:flex;align-items:center;gap:10px;font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:20px;}
+    .hero-eyebrow::before{content:'';display:block;width:22px;height:2px;background:var(--blue-mid);flex-shrink:0;}
+    .hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(2rem,4vw,3rem);line-height:1.18;color:var(--text);margin-bottom:22px;}
+    .hero h1 em{font-style:italic;color:var(--blue);}
+    .hero-lead{font-size:1.06rem;color:var(--text-mid);line-height:1.72;max-width:520px;margin-bottom:34px;}
+    .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px;}
+    .btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:var(--white);padding:12px 24px;border-radius:6px;font-weight:600;font-size:.93rem;transition:background .2s,box-shadow .2s;box-shadow:0 2px 12px rgba(44,110,158,.22);}
+    .btn-primary:hover{background:#245d88;box-shadow:0 4px 20px rgba(44,110,158,.32);}
+    .btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--blue);padding:11px 22px;border-radius:6px;border:1.5px solid var(--blue-line);font-weight:600;font-size:.93rem;transition:border-color .2s,background .2s;}
+    .btn-outline:hover{border-color:var(--blue);background:var(--blue-pale);}
+    .hero-chips{display:flex;gap:8px;flex-wrap:wrap;}
+    .chip{display:inline-flex;align-items:center;gap:6px;background:var(--bg);border:1px solid var(--rule);padding:6px 12px;border-radius:50px;font-size:.81rem;font-weight:500;color:var(--text-mid);transition:border-color .15s,color .15s;}
+    .chip:hover{border-color:var(--blue-mid);color:var(--blue);}
+    .chip-dot{width:6px;height:6px;border-radius:50%;background:var(--blue-mid);flex-shrink:0;}
+    .chip-dot.g{background:var(--green-mid);}
+    .chip-dot.a{background:var(--amber);}
+    .hero-panel{background:var(--bg);border:1px solid var(--rule);border-radius:var(--r-lg);overflow:hidden;}
+    .hero-panel-head{background:var(--blue-pale);border-bottom:1px solid var(--blue-line);padding:14px 18px;font-size:.74rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);}
+    .hero-panel-nav{padding:8px 6px;}
+    .plink{display:flex;align-items:center;justify-content:space-between;padding:9px 12px;border-radius:6px;font-size:.86rem;font-weight:500;color:var(--text);transition:background .15s;}
+    .plink:hover{background:var(--white);color:var(--blue);}
+    .plink-arr{color:var(--text-light);font-size:.8rem;}
+    .pdiv{height:1px;background:var(--rule);margin:5px 12px;}
+
+    /* TRUST BAR */
+    #trust-bar{background:var(--blue);padding:13px 28px;}
+    .trust-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;flex-wrap:wrap;}
+    .ti{display:flex;align-items:center;gap:8px;font-size:.81rem;font-weight:500;color:rgba(255,255,255,.82);padding:4px 24px 4px 0;}
+    .ti+.ti{border-left:1px solid rgba(255,255,255,.18);padding-left:24px;}
+    .ti svg{color:rgba(255,255,255,.55);flex-shrink:0;}
+
+    /* SECTIONS */
+    hr.sep{border:none;border-top:1px solid var(--rule);}
+    .sec{padding:68px 28px;}
+    .sec-alt{padding:68px 28px;background:var(--white);}
+    .kicker{display:flex;align-items:center;gap:10px;font-size:.73rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-light);margin-bottom:13px;}
+    .kl{width:18px;height:1.5px;background:var(--rule);}
+    .kl.b{background:var(--blue-mid);}
+    .kl.g{background:var(--green-mid);}
+    .kl.a{background:var(--amber);}
+    .sh2{font-family:var(--serif);font-size:clamp(1.5rem,2.8vw,2rem);font-weight:700;color:var(--text);line-height:1.22;margin-bottom:10px;}
+    .sdesc{font-size:.98rem;color:var(--text-mid);line-height:1.68;max-width:580px;margin-bottom:44px;}
+
+    /* SILOS */
+    .silo-row{background:var(--white);border:1px solid var(--rule);border-radius:var(--r);overflow:hidden;margin-bottom:10px;}
+    .silo-row:last-child{margin-bottom:0;}
+    .silo-toggle{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:18px 22px;text-align:left;transition:background .15s;}
+    .silo-toggle:hover{background:var(--bg);}
+    .snum{width:30px;height:30px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;letter-spacing:.04em;flex-shrink:0;}
+    .snum.s1{background:var(--blue-pale);color:var(--blue);}
+    .snum.s2{background:var(--green-pale);color:var(--green);}
+    .snum.s3{background:var(--amber-pale);color:var(--amber);}
+    .snum.s4{background:var(--green-pale);color:var(--green);}
+    .snum.s5{background:#F0EEF8;color:#5B4FA0;}
+    .stxt{flex:1;}
+    .stitle{font-family:var(--serif);font-weight:600;font-size:1rem;color:var(--text);display:block;}
+    .ssub{font-size:.82rem;color:var(--text-light);}
+    .scount{font-size:.73rem;font-weight:600;color:var(--text-light);background:var(--bg);border:1px solid var(--rule);padding:3px 9px;border-radius:50px;margin-left:auto;flex-shrink:0;}
+    .schev{color:var(--text-light);flex-shrink:0;transition:transform .25s;}
+    .silo-row.open .schev{transform:rotate(180deg);}
+    .sbody{border-top:1px solid var(--rule);padding:18px 22px 22px;display:none;}
+    .silo-row.open .sbody{display:block;}
+    .spills{display:flex;flex-wrap:wrap;gap:7px;}
+    .sp{display:inline-flex;align-items:center;padding:5px 13px;border-radius:50px;font-size:.82rem;font-weight:500;border:1px solid;transition:background .15s,color .15s;}
+    .sp.s1{color:var(--blue);border-color:var(--blue-line);background:var(--blue-pale);}
+    .sp.s1:hover{background:var(--blue);color:var(--white);border-color:var(--blue);}
+    .sp.s2{color:var(--green);border-color:#B8DCBA;background:var(--green-pale);}
+    .sp.s2:hover{background:var(--green);color:var(--white);border-color:var(--green);}
+    .sp.s3{color:var(--amber);border-color:#F0D09A;background:var(--amber-pale);}
+    .sp.s3:hover{background:var(--amber);color:var(--white);border-color:var(--amber);}
+    .sp.s4{color:var(--green);border-color:#B8DCBA;background:var(--green-pale);}
+    .sp.s4:hover{background:var(--green-mid);color:var(--white);}
+    .sp.s5{color:#5B4FA0;border-color:#CAC4F0;background:#F0EEF8;}
+    .sp.s5:hover{background:#5B4FA0;color:var(--white);}
+
+    /* GUIDE CARDS */
+    .guides-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+    .gc{background:var(--white);border:1px solid var(--rule);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .15s;}
+    .gc:hover{box-shadow:0 8px 32px rgba(44,110,158,.11);transform:translateY(-2px);}
+    .gc-top{padding:20px 20px 0;display:flex;align-items:flex-start;gap:12px;}
+    .gc-icon{width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .gc-meta{flex:1;}
+    .gc-tag{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-light);display:block;margin-bottom:5px;}
+    .gc h3{font-family:var(--serif);font-weight:600;font-size:1rem;color:var(--text);line-height:1.3;}
+    .gc-body{padding:12px 20px;font-size:.86rem;color:var(--text-mid);line-height:1.6;flex:1;}
+    .gc-foot{padding:12px 20px 18px;border-top:1px solid var(--rule);display:flex;align-items:center;justify-content:space-between;}
+    .gc-link{font-size:.83rem;font-weight:600;color:var(--blue);display:flex;align-items:center;gap:5px;transition:gap .15s;}
+    .gc:hover .gc-link{gap:9px;}
+    .gc-words{font-size:.73rem;color:var(--text-light);}
+
+    /* CLUSTERS */
+    .cluster-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+    .cc{background:var(--white);border:1px solid var(--rule);border-radius:var(--r);padding:18px;}
+    .cc-title{font-family:var(--serif);font-weight:700;font-size:.96rem;color:var(--text);margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--rule);}
+    .clinks{display:flex;flex-direction:column;gap:6px;}
+    .clink{font-size:.83rem;color:var(--text-mid);display:flex;align-items:center;gap:7px;transition:color .15s;}
+    .clink:hover{color:var(--blue);}
+    .clink::before{content:'';display:block;width:4px;height:4px;border-radius:50%;background:var(--rule);flex-shrink:0;transition:background .15s;}
+    .clink:hover::before{background:var(--blue-mid);}
+
+    /* MISSION */
+    .mission-layout{display:grid;grid-template-columns:1fr 400px;gap:72px;align-items:start;}
+    .mission-text p{font-size:.98rem;color:var(--text-mid);line-height:1.75;margin-bottom:15px;}
+    .mission-text p strong{color:var(--text);}
+    .mission-quote{font-family:var(--serif);font-style:italic;font-size:1.18rem;color:var(--blue);line-height:1.55;border-left:3px solid var(--blue-mid);padding:14px 0 14px 20px;margin:26px 0;}
+    .mvalues{display:flex;flex-direction:column;gap:0;border:1px solid var(--rule);border-radius:var(--r);overflow:hidden;}
+    .mv{display:flex;align-items:flex-start;gap:13px;padding:16px 18px;background:var(--white);border-bottom:1px solid var(--rule);transition:background .15s;}
+    .mv:last-child{border-bottom:none;}
+    .mv:hover{background:var(--bg);}
+    .mv-icon{width:34px;height:34px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .mv-t{font-weight:600;font-size:.91rem;margin-bottom:3px;}
+    .mv-d{font-size:.81rem;color:var(--text-mid);line-height:1.5;}
+
+    /* NEWSLETTER */
+    #newsletter{background:var(--bg);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:76px 28px;}
+    .nl-layout{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 440px;gap:60px;align-items:center;}
+    .nl-left p{font-size:.97rem;color:var(--text-mid);line-height:1.7;margin-bottom:22px;}
+    .nl-checks{display:flex;flex-direction:column;gap:10px;}
+    .nlc{display:flex;align-items:flex-start;gap:10px;font-size:.88rem;color:var(--text);}
+    .nlc-mark{width:19px;height:19px;border-radius:50%;background:var(--green-pale);border:1.5px solid var(--green-mid);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;font-size:.6rem;color:var(--green);}
+    .nl-card{background:var(--white);border:1px solid var(--rule);border-radius:var(--r-lg);overflow:hidden;box-shadow:0 4px 24px rgba(44,110,158,.07);}
+    .nl-head{background:var(--blue);padding:20px 22px;}
+    .nl-head-label{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:5px;}
+    .nl-head-title{font-family:var(--serif);font-size:1.2rem;font-weight:700;color:var(--white);line-height:1.3;margin-bottom:3px;}
+    .nl-head-sub{font-size:.82rem;color:rgba(255,255,255,.7);}
+    .nl-body{padding:22px;}
+    .nl-row{display:flex;flex-direction:column;gap:9px;margin-bottom:12px;}
+    .nl-input{width:100%;padding:11px 14px;border-radius:6px;border:1.5px solid var(--rule);font-size:.91rem;color:var(--text);outline:none;transition:border-color .2s;background:var(--bg);}
+    .nl-input:focus{border-color:var(--blue-mid);background:var(--white);}
+    .nl-input::placeholder{color:var(--text-light);}
+    .btn-nl{width:100%;padding:12px;background:var(--amber);color:var(--white);border:none;border-radius:6px;font-weight:700;font-size:.93rem;cursor:pointer;transition:background .2s;box-shadow:0 2px 12px rgba(200,120,10,.25);}
+    .btn-nl:hover{background:#a86408;}
+    .nl-reassure{font-size:.74rem;color:var(--text-light);text-align:center;margin-top:11px;display:flex;align-items:center;justify-content:center;gap:5px;}
+    .nl-reassure svg{color:var(--green-mid);}
+
+    /* TÉMOIGNAGES */
+    .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+    .tcard{background:var(--white);border:1px solid var(--rule);border-radius:var(--r-lg);padding:22px;}
+    .tstars{color:var(--amber);font-size:.93rem;letter-spacing:2px;margin-bottom:13px;}
+    .ttext{font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--text);line-height:1.7;margin-bottom:16px;}
+    .tauthor{display:flex;align-items:center;gap:10px;padding-top:13px;border-top:1px solid var(--rule);}
+    .tavatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:var(--white);flex-shrink:0;}
+    .tname{font-size:.86rem;font-weight:600;}
+    .tdetail{font-size:.76rem;color:var(--text-light);}
+
+    /* FOOTER */
+    #site-footer{background:var(--text);padding:22px 28px;}
+    .footer-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+    .footer-copy{font-size:.82rem;color:rgba(255,255,255,.4);}
+    .footer-nav{display:flex;gap:22px;flex-wrap:wrap;}
+    .footer-nav a{font-size:.82rem;color:rgba(255,255,255,.4);transition:color .2s;}
+    .footer-nav a:hover{color:rgba(255,255,255,.8);}
+
+    /* ANIMATIONS */
+    @keyframes rise{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:translateY(0);}}
+    .hero-eyebrow{animation:rise .5s ease both;}
+    .hero h1{animation:rise .5s .08s ease both;}
+    .hero-lead{animation:rise .5s .15s ease both;}
+    .hero-ctas{animation:rise .5s .2s ease both;}
+    .hero-chips{animation:rise .5s .27s ease both;}
+    .hero-panel{animation:rise .5s .1s ease both;}
+
+    /* RESPONSIVE */
+    @media(max-width:960px){
+      .hero-inner,.mission-layout,.nl-layout{grid-template-columns:1fr;gap:36px;}
+      .hero-panel{display:none;}
+      .guides-grid,.tgrid,.cluster-grid{grid-template-columns:1fr 1fr;}
+      .header-nav{display:none;}
+    }
+    @media(max-width:600px){
+      .guides-grid,.tgrid,.cluster-grid{grid-template-columns:1fr;}
+      .trust-inner{flex-direction:column;gap:6px;}
+      .ti+.ti{border-left:none;padding-left:0;border-top:1px solid rgba(255,255,255,.12);padding-top:6px;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="header-brand" aria-label="SanteDesMuqueuses.fr — Accueil">
+      <img src="logo.png" alt="Logo SanteDesMuqueuses.fr"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="header-brand-fallback">
+        <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="36" cy="36" r="36" fill="#EBF4FA"/>
+          <path d="M36 12C36 12 20 30 20 42c0 9.4 7.2 17 16 17s16-7.6 16-17c0-12-16-30-16-30z" fill="#2C6E9E" opacity=".85"/>
+          <path d="M36 22c0 0-10 12-10 20 0 5.5 4.5 10 10 10s10-4.5 10-10c0-8-10-20-10-20z" fill="#3D7A40" opacity=".6"/>
+          <ellipse cx="36" cy="44" rx="5" ry="5" fill="white" opacity=".38"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">Santé des Muqueuses</span>
+          <span class="brand-baseline">Guide scientifique &amp; solutions naturelles</span>
+        </div>
+      </div>
+    </a>
+    <nav class="header-nav" aria-label="Navigation principale">
+      <a href="#silos" class="nav-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        Muqueuses
+      </a>
+      <a href="#silos" class="nav-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        Zones du corps
+      </a>
+      <a href="#silos" class="nav-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        Causes &amp; Symptômes
+      </a>
+      <a href="#silos" class="nav-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Solutions naturelles
+      </a>
+    </nav>
+    <div class="header-search" role="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" placeholder="Rechercher…" aria-label="Recherche" />
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" aria-label="Introduction">
+  <div class="hero-inner">
+    <div>
+      <p class="hero-eyebrow">Guide médical de référence</p>
+      <h1>Sécheresse des muqueuses ?<br /><em>Comprendre les causes.<br />Réparer naturellement.</em></h1>
+      <p class="hero-lead">Yeux secs, bouche sèche, sécheresse intime, gorge irritée, intestin fragile — ces symptômes ont souvent une origine commune. Découvrez les causes réelles et les protocoles naturels validés pour retrouver le confort.</p>
+      <div class="hero-ctas">
+        <a href="secheresse-des-muqueuses.html" class="btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          Comprendre
+        </a>
+        <a href="#silos" class="btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Trouver ma solution
+        </a>
+      </div>
+      <div class="hero-chips" aria-label="Symptômes couverts">
+        <a href="secheresse-oculaire.html" class="chip"><span class="chip-dot"></span>Yeux secs</a>
+        <a href="secheresse-intime.html" class="chip"><span class="chip-dot"></span>Sécheresse intime</a>
+        <a href="bouche-seche.html" class="chip"><span class="chip-dot g"></span>Bouche sèche</a>
+        <a href="muqueuse-intestinale-fragile.html" class="chip"><span class="chip-dot g"></span>Intestin fragile</a>
+        <a href="menopause-secheresse-muqueuses.html" class="chip"><span class="chip-dot a"></span>Ménopause</a>
+        <a href="syndrome-de-sjogren.html" class="chip"><span class="chip-dot a"></span>Sjögren</a>
+        <a href="secheresse-nasale.html" class="chip"><span class="chip-dot"></span>Nez sec</a>
+      </div>
+    </div>
+    <div class="hero-panel" aria-label="Accès rapide">
+      <div class="hero-panel-head">Accès rapide — guides essentiels</div>
+      <nav class="hero-panel-nav">
+        <a href="sante-des-muqueuses.html" class="plink">Qu'est-ce qu'une muqueuse ?<span class="plink-arr">›</span></a>
+        <a href="secheresse-des-muqueuses.html" class="plink">Sécheresse des muqueuses<span class="plink-arr">›</span></a>
+        <div class="pdiv"></div>
+        <a href="menopause-secheresse-muqueuses.html" class="plink">Ménopause et sécheresse<span class="plink-arr">›</span></a>
+        <a href="syndrome-de-sjogren.html" class="plink">Syndrome de Sjögren<span class="plink-arr">›</span></a>
+        <a href="medicaments-qui-assechent-les-muqueuses.html" class="plink">Médicaments asséchants<span class="plink-arr">›</span></a>
+        <div class="pdiv"></div>
+        <a href="huile-argousier-muqueuses.html" class="plink">Huile d'argousier<span class="plink-arr">›</span></a>
+        <a href="omega-7-bienfaits-muqueuses.html" class="plink">Oméga‑7 et muqueuses<span class="plink-arr">›</span></a>
+        <a href="probiotiques-sante-muqueuses.html" class="plink">Probiotiques muqueuses<span class="plink-arr">›</span></a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div id="trust-bar" role="complementary">
+  <div class="trust-inner">
+    <div class="ti"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Sources PubMed, Vidal, HAS</div>
+    <div class="ti"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>50 guides thématiques sourcés</div>
+    <div class="ti"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mis à jour régulièrement</div>
+    <div class="ti"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>Sans publicité intrusive</div>
+  </div>
+</div>
+
+<!-- SILOS -->
+<section class="sec" id="silos" aria-labelledby="silos-h2">
+  <div class="wrap">
+    <p class="kicker"><span class="kl b"></span>Architecture thématique</p>
+    <h2 class="sh2" id="silos-h2">50 guides classés par thème médical</h2>
+    <p class="sdesc">Chaque silo regroupe des articles de fond sourcés. Cliquez pour explorer.</p>
+
+    <div>
+      <div class="silo-row open">
+        <button class="silo-toggle" aria-expanded="true" aria-controls="sb1">
+          <span class="snum s1">S01</span>
+          <span class="stxt"><span class="stitle">Muqueuses — Fondations</span><span class="ssub">Rôle, hydratation, barrière, microbiote, syndrome sec</span></span>
+          <span class="scount">10 guides</span>
+          <svg class="schev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="sbody" id="sb1">
+          <div class="spills">
+            <a href="sante-des-muqueuses.html" class="sp s1">Santé des muqueuses</a>
+            <a href="secheresse-des-muqueuses.html" class="sp s1">Sécheresse des muqueuses</a>
+            <a href="hydratation-des-muqueuses.html" class="sp s1">Hydratation des muqueuses</a>
+            <a href="regenerer-les-muqueuses-naturellement.html" class="sp s1">Régénérer les muqueuses naturellement</a>
+            <a href="inflammation-des-muqueuses.html" class="sp s1">Inflammation des muqueuses</a>
+            <a href="muqueuses-fragiles-causes.html" class="sp s1">Muqueuses fragiles — causes</a>
+            <a href="barriere-muqueuse-role.html" class="sp s1">Barrière muqueuse — rôle</a>
+            <a href="microbiote-des-muqueuses.html" class="sp s1">Microbiote des muqueuses</a>
+            <a href="syndrome-sec-global.html" class="sp s1">Syndrome sec (vue globale)</a>
+            <a href="proteger-ses-muqueuses.html" class="sp s1">Protéger ses muqueuses</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="silo-row">
+        <button class="silo-toggle" aria-expanded="false" aria-controls="sb2">
+          <span class="snum s2">S02</span>
+          <span class="stxt"><span class="stitle">Zones du corps</span><span class="ssub">Muqueuses oculaires, buccales, vaginales, nasales, digestives, ORL</span></span>
+          <span class="scount">10 guides</span>
+          <svg class="schev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="sbody" id="sb2">
+          <div class="spills">
+            <a href="secheresse-oculaire.html" class="sp s2">Muqueuses oculaires — sécheresse</a>
+            <a href="bouche-seche.html" class="sp s2">Muqueuses buccales — bouche sèche</a>
+            <a href="secheresse-intime.html" class="sp s2">Muqueuses vaginales — sécheresse intime</a>
+            <a href="secheresse-nasale.html" class="sp s2">Muqueuses nasales — nez sec</a>
+            <a href="muqueuse-intestinale-fragile.html" class="sp s2">Muqueuse intestinale fragile</a>
+            <a href="gorge-seche.html" class="sp s2">Muqueuses ORL — gorge sèche</a>
+            <a href="levres-gercees-chroniques.html" class="sp s2">Lèvres gercées chroniques</a>
+            <a href="atrophie-muqueuse-vaginale.html" class="sp s2">Atrophie muqueuse vaginale</a>
+            <a href="inflammation-muqueuse-digestive.html" class="sp s2">Inflammation muqueuse digestive</a>
+            <a href="muqueuse-orl-fragile.html" class="sp s2">Muqueuse ORL fragile</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="silo-row">
+        <button class="silo-toggle" aria-expanded="false" aria-controls="sb3">
+          <span class="snum s3">S03</span>
+          <span class="stxt"><span class="stitle">Causes médicales</span><span class="ssub">Ménopause, médicaments, maladies auto-immunes, carences, stress</span></span>
+          <span class="scount">10 guides</span>
+          <svg class="schev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="sbody" id="sb3">
+          <div class="spills">
+            <a href="menopause-secheresse-muqueuses.html" class="sp s3">Ménopause et sécheresse des muqueuses</a>
+            <a href="medicaments-qui-assechent-les-muqueuses.html" class="sp s3">Médicaments qui assèchent les muqueuses</a>
+            <a href="stress-et-secheresse-corporelle.html" class="sp s3">Stress et sécheresse corporelle</a>
+            <a href="deshydratation-chronique-symptomes.html" class="sp s3">Déshydratation chronique</a>
+            <a href="maladies-auto-immunes-syndrome-sec.html" class="sp s3">Maladies auto-immunes et syndrome sec</a>
+            <a href="syndrome-de-sjogren.html" class="sp s3">Syndrome de Sjögren</a>
+            <a href="carence-vitamine-a-muqueuses.html" class="sp s3">Carence vitamine A et muqueuses</a>
+            <a href="carence-omega-3-secheresse.html" class="sp s3">Carence oméga‑3 et sécheresse</a>
+            <a href="pollution-et-irritation-muqueuse.html" class="sp s3">Pollution et irritation muqueuse</a>
+            <a href="ecrans-et-secheresse-oculaire.html" class="sp s3">Écrans et sécheresse oculaire</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="silo-row">
+        <button class="silo-toggle" aria-expanded="false" aria-controls="sb4">
+          <span class="snum s4">S04</span>
+          <span class="stxt"><span class="stitle">Solutions naturelles</span><span class="ssub">Argousier, oméga‑7, probiotiques, zinc, glutamine, aloe vera</span></span>
+          <span class="scount">10 guides</span>
+          <svg class="schev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="sbody" id="sb4">
+          <div class="spills">
+            <a href="huile-argousier-muqueuses.html" class="sp s4">Huile d'argousier</a>
+            <a href="omega-7-bienfaits-muqueuses.html" class="sp s4">Oméga‑7 bienfaits</a>
+            <a href="probiotiques-sante-muqueuses.html" class="sp s4">Probiotiques muqueuses</a>
+            <a href="aloe-vera-muqueuse-digestive.html" class="sp s4">Aloe vera — muqueuse digestive</a>
+            <a href="glutamine-intestin-permeable.html" class="sp s4">Glutamine — intestin perméable</a>
+            <a href="zinc-reparation-muqueuse.html" class="sp s4">Zinc — réparation muqueuse</a>
+            <a href="vitamine-a-regeneration-muqueuse.html" class="sp s4">Vitamine A — régénération</a>
+            <a href="comment-hydrater-les-muqueuses.html" class="sp s4">Comment hydrater les muqueuses</a>
+            <a href="alimentation-protectrice-muqueuses.html" class="sp s4">Alimentation protectrice</a>
+            <a href="plantes-secheresse-intime.html" class="sp s4">Plantes — sécheresse intime</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="silo-row">
+        <button class="silo-toggle" aria-expanded="false" aria-controls="sb5">
+          <span class="snum s5">S05</span>
+          <span class="stxt"><span class="stitle">Symptômes fréquents</span><span class="ssub">Yeux qui piquent, langue sèche, nez sec, douleurs, aphtes…</span></span>
+          <span class="scount">10 guides</span>
+          <svg class="schev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="sbody" id="sb5">
+          <div class="spills">
+            <a href="yeux-qui-piquent-et-brulent.html" class="sp s5">Yeux qui piquent et brûlent</a>
+            <a href="sensation-sable-dans-les-yeux.html" class="sp s5">Sensation de sable dans les yeux</a>
+            <a href="langue-seche-causes.html" class="sp s5">Langue sèche — causes</a>
+            <a href="nez-sec-la-nuit.html" class="sp s5">Nez sec la nuit</a>
+            <a href="douleur-rapport-secheresse.html" class="sp s5">Douleur rapport — sécheresse</a>
+            <a href="ballonnements-intestin-permeable.html" class="sp s5">Ballonnements — intestin perméable</a>
+            <a href="aphtes-frequents-causes.html" class="sp s5">Aphtes fréquents — causes</a>
+            <a href="gorge-irritee-chronique.html" class="sp s5">Gorge irritée chronique</a>
+            <a href="irritation-vulvaire-sans-infection.html" class="sp s5">Irritation vulvaire sans infection</a>
+            <a href="salive-epaisse-symptomes.html" class="sp s5">Salive épaisse — symptômes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="sep" />
+
+<!-- GUIDES ÉDITORIAUX -->
+<section class="sec-alt" aria-labelledby="guides-h2">
+  <div class="wrap">
+    <p class="kicker"><span class="kl b"></span>Guides essentiels</p>
+    <h2 class="sh2" id="guides-h2">Les pages les plus consultées</h2>
+    <p class="sdesc">Articles de fond, sourcés et mis à jour régulièrement.</p>
+    <div class="guides-grid">
+
+      <a href="secheresse-oculaire.html" class="gc">
+        <div class="gc-top">
+          <div class="gc-icon" style="background:var(--blue-pale);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <div class="gc-meta"><span class="gc-tag">Zones du corps</span><h3>Sécheresse oculaire</h3></div>
+        </div>
+        <div class="gc-body">Causes, facteurs de risque (écrans, ménopause, médicaments) et protocoles naturels : larmes artificielles, oméga‑7, alimentation anti-inflammatoire.</div>
+        <div class="gc-foot"><span class="gc-link">Lire le guide <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></span><span class="gc-words">≈ 3 200 mots</span></div>
+      </a>
+
+      <a href="secheresse-intime.html" class="gc">
+        <div class="gc-top">
+          <div class="gc-icon" style="background:var(--green-pale);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <div class="gc-meta"><span class="gc-tag">Zones du corps</span><h3>Sécheresse intime</h3></div>
+        </div>
+        <div class="gc-body">Origines hormonales, traitements locaux, solutions naturelles : huile d'argousier, phytoestrogènes, probiotiques vaginaux.</div>
+        <div class="gc-foot"><span class="gc-link">Lire le guide <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></span><span class="gc-words">≈ 3 500 mots</span></div>
+      </a>
+
+      <a href="huile-argousier-muqueuses.html" class="gc">
+        <div class="gc-top">
+          <div class="gc-icon" style="background:var(--amber-pale);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div class="gc-meta"><span class="gc-tag">Solutions naturelles</span><h3>Huile d'argousier</h3></div>
+        </div>
+        <div class="gc-body">Effets prouvés sur les muqueuses : mécanismes d'action, études cliniques PubMed, dosages recommandés, précautions d'emploi.</div>
+        <div class="gc-foot"><span class="gc-link">Lire le guide <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></span><span class="gc-words">≈ 2 800 mots</span></div>
+      </a>
+
+      <a href="syndrome-de-sjogren.html" class="gc">
+        <div class="gc-top">
+          <div class="gc-icon" style="background:#F0EEF8;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5B4FA0" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <div class="gc-meta"><span class="gc-tag">Causes médicales</span><h3>Syndrome de Sjögren</h3></div>
+        </div>
+        <div class="gc-body">Diagnostic, critères ACR/EULAR, symptômes muqueux, prise en charge médicale et complémentaire. Signaux d'alarme.</div>
+        <div class="gc-foot"><span class="gc-link">Lire le guide <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></span><span class="gc-words">≈ 4 000 mots</span></div>
+      </a>
+
+      <a href="menopause-secheresse-muqueuses.html" class="gc">
+        <div class="gc-top">
+          <div class="gc-icon" style="background:var(--amber-pale);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+          <div class="gc-meta"><span class="gc-tag">Causes médicales</span><h3>Ménopause et sécheresse</h3></div>
+        </div>
+        <div class="gc-body">Carence en œstrogènes et altération des muqueuses oculaires, vaginales et digestives. Solutions hormonales et non-hormonales comparées.</div>
+        <div class="gc-foot"><span class="gc-link">Lire le guide <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></span><span class="gc-words">≈ 3 600 mots</span></div>
+      </a>
+
+      <a href="omega-7-bienfaits-muqueuses.html" class="gc">
+        <div class="gc-top">
+          <div class="gc-icon" style="background:var(--green-pale);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg></div>
+          <div class="gc-meta"><span class="gc-tag">Solutions naturelles</span><h3>Oméga‑7 bienfaits</h3></div>
+        </div>
+        <div class="gc-body">Acide palmitoléique et restauration de l'hydratation muqueuse de l'intérieur. Sources alimentaires, compléments, études cliniques.</div>
+        <div class="gc-foot"><span class="gc-link">Lire le guide <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></span><span class="gc-words">≈ 2 600 mots</span></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<hr class="sep" />
+
+<!-- CLUSTERS SEO -->
+<section class="sec" aria-labelledby="clusters-h2">
+  <div class="wrap">
+    <p class="kicker"><span class="kl g"></span>Parcours thématiques</p>
+    <h2 class="sh2" id="clusters-h2">Explorer par problématique</h2>
+    <p class="sdesc">Chaque parcours relie causes, symptômes et solutions pour une compréhension globale.</p>
+    <div class="cluster-grid">
+      <div class="cc">
+        <div class="cc-title">Sécheresse vaginale</div>
+        <div class="clinks">
+          <a href="secheresse-intime.html" class="clink">Vue d'ensemble</a>
+          <a href="menopause-secheresse-muqueuses.html" class="clink">Causes hormonales</a>
+          <a href="atrophie-muqueuse-vaginale.html" class="clink">Atrophie vaginale</a>
+          <a href="plantes-secheresse-intime.html" class="clink">Plantes adaptées</a>
+          <a href="probiotiques-sante-muqueuses.html" class="clink">Probiotiques vaginaux</a>
+          <a href="irritation-vulvaire-sans-infection.html" class="clink">Irritation sans infection</a>
+          <a href="douleur-rapport-secheresse.html" class="clink">Douleurs lors du rapport</a>
+        </div>
+      </div>
+      <div class="cc">
+        <div class="cc-title">Sécheresse oculaire</div>
+        <div class="clinks">
+          <a href="secheresse-oculaire.html" class="clink">Vue d'ensemble</a>
+          <a href="ecrans-et-secheresse-oculaire.html" class="clink">Rôle des écrans</a>
+          <a href="yeux-qui-piquent-et-brulent.html" class="clink">Yeux qui piquent</a>
+          <a href="sensation-sable-dans-les-yeux.html" class="clink">Sensation de sable</a>
+          <a href="omega-7-bienfaits-muqueuses.html" class="clink">Oméga‑7 pour les yeux</a>
+          <a href="huile-argousier-muqueuses.html" class="clink">Huile d'argousier</a>
+          <a href="carence-omega-3-secheresse.html" class="clink">Carence oméga‑3</a>
+        </div>
+      </div>
+      <div class="cc">
+        <div class="cc-title">Intestin perméable</div>
+        <div class="clinks">
+          <a href="muqueuse-intestinale-fragile.html" class="clink">Muqueuse intestinale fragile</a>
+          <a href="inflammation-muqueuse-digestive.html" class="clink">Inflammation digestive</a>
+          <a href="ballonnements-intestin-permeable.html" class="clink">Ballonnements associés</a>
+          <a href="glutamine-intestin-permeable.html" class="clink">Glutamine — réparation</a>
+          <a href="probiotiques-sante-muqueuses.html" class="clink">Probiotiques ciblés</a>
+          <a href="aloe-vera-muqueuse-digestive.html" class="clink">Aloe vera digestif</a>
+          <a href="alimentation-protectrice-muqueuses.html" class="clink">Alimentation protectrice</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="sep" />
+
+<!-- MISSION -->
+<section class="sec-alt" aria-labelledby="mission-h2">
+  <div class="wrap">
+    <div class="mission-layout">
+      <div class="mission-text">
+        <p class="kicker"><span class="kl"></span>Pourquoi ce site existe</p>
+        <h2 class="sh2" id="mission-h2">Des symptômes longtemps incompris</h2>
+        <p>Des millions de personnes souffrent de sécheresse oculaire, de sécheresse intime, d'intestin perméable ou de gorge irritée chronique — sans jamais obtenir d'explication claire ni de prise en charge adaptée.</p>
+        <p><strong>SanteDesMuqueuses.fr</strong> a été créé pour combler ce manque : offrir une information médicale rigoureuse, sourcée et accessible, centrée sur les muqueuses et leurs pathologies.</p>
+        <blockquote class="mission-quote">"Des solutions claires et validées<br />pour retrouver confort et hydratation."</blockquote>
+        <p>Chaque article intègre les dernières données de la littérature scientifique (PubMed, HAS, sociétés savantes) et distingue ce qui est prouvé de ce qui relève de l'empirisme. Nous indiquons systématiquement quand consulter un professionnel de santé.</p>
+      </div>
+      <div class="mvalues">
+        <div class="mv">
+          <div class="mv-icon" style="background:var(--blue-pale);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+          <div><div class="mv-t">Rigueur scientifique</div><div class="mv-d">Chaque affirmation est liée à une source vérifiable : étude PubMed, recommandation HAS, publication de société savante.</div></div>
+        </div>
+        <div class="mv">
+          <div class="mv-icon" style="background:var(--green-pale);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div><div class="mv-t">Transparence sur les limites</div><div class="mv-d">Nous indiquons clairement la solidité des preuves et les situations nécessitant un avis médical.</div></div>
+        </div>
+        <div class="mv">
+          <div class="mv-icon" style="background:var(--amber-pale);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+          <div><div class="mv-t">Mise à jour régulière</div><div class="mv-d">Chaque article est revu à la lumière des nouvelles publications. Date de mise à jour visible sur chaque page.</div></div>
+        </div>
+        <div class="mv">
+          <div class="mv-icon" style="background:#F0EEF8;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5B4FA0" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div><div class="mv-t">Accessible à tous</div><div class="mv-d">Langage clair, schémas explicatifs, FAQ : chaque guide est compréhensible sans formation médicale préalable.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="sep" />
+
+<!-- NEWSLETTER — produit -->
+<section id="newsletter" aria-labelledby="nl-h2">
+  <div class="nl-layout">
+    <div class="nl-left">
+      <p class="kicker"><span class="kl a"></span>Programme gratuit</p>
+      <h2 class="sh2" id="nl-h2">Réparer les muqueuses<br />en 14 jours</h2>
+      <p>Recevez le protocole naturel complet : compléments clés, erreurs à éviter, plan alimentaire anti-sécheresse. Construit sur la littérature scientifique.</p>
+      <div class="nl-checks">
+        <div class="nlc"><div class="nlc-mark">✓</div><span><strong>14 jours</strong> de protocole naturel — 1 e-mail par jour</span></div>
+        <div class="nlc"><div class="nlc-mark">✓</div><span><strong>Les 5 erreurs</strong> les plus fréquentes à éviter absolument</span></div>
+        <div class="nlc"><div class="nlc-mark">✓</div><span><strong>Dosages et sources</strong> pour chaque solution naturelle</span></div>
+        <div class="nlc"><div class="nlc-mark">✓</div><span><strong>Plan alimentaire</strong> protecteur des muqueuses</span></div>
+        <div class="nlc"><div class="nlc-mark">✓</div><span>Accès immédiat · Sans engagement · Désinscription en 1 clic</span></div>
+      </div>
+    </div>
+    <div class="nl-card">
+      <div class="nl-head">
+        <div class="nl-head-label">Programme gratuit</div>
+        <div class="nl-head-title">Réparer les muqueuses en 14 jours</div>
+        <div class="nl-head-sub">Protocole naturel — 1 e-mail par jour</div>
+      </div>
+      <div class="nl-body">
+        <form onsubmit="return false;" aria-label="Inscription programme 14 jours">
+          <div class="nl-row">
+            <input class="nl-input" type="text" placeholder="Votre prénom" aria-label="Prénom" />
+            <input class="nl-input" type="email" placeholder="Votre adresse e-mail" aria-label="E-mail" required />
+          </div>
+          <button class="btn-nl" type="submit">Recevoir le programme gratuit →</button>
+        </form>
+        <p class="nl-reassure">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Données protégées · Aucun spam · Désinscription en 1 clic
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="sep" />
+
+<!-- TÉMOIGNAGES -->
+<section class="sec" aria-labelledby="t-h2">
+  <div class="wrap">
+    <p class="kicker"><span class="kl"></span>Retours de lecteurs</p>
+    <h2 class="sh2" id="t-h2">Ce qu'ils ont trouvé ici</h2>
+    <p class="sdesc" style="margin-bottom:34px;">Des personnes qui cherchaient des réponses claires sur leurs symptômes.</p>
+    <div class="tgrid">
+      <div class="tcard">
+        <div class="tstars">★★★★★</div>
+        <p class="ttext">"Après trois ans de sécheresse oculaire mal expliquée, j'ai enfin compris le lien avec ma ménopause et ma carence en oméga‑3. Le guide est précis, sourcé, sans blabla."</p>
+        <div class="tauthor"><div class="tavatar" style="background:var(--blue);">MC</div><div><div class="tname">Marie-Claire, 54 ans</div><div class="tdetail">Sécheresse oculaire post-ménopause</div></div></div>
+      </div>
+      <div class="tcard">
+        <div class="tstars">★★★★★</div>
+        <p class="ttext">"Je cherchais la différence entre syndrome de Sjögren et simple sécheresse. L'article m'a donné les bons mots pour parler à mon rhumatologue."</p>
+        <div class="tauthor"><div class="tavatar" style="background:var(--green-dark,#3D7A40);">NF</div><div><div class="tname">Nathalie F., 47 ans</div><div class="tdetail">Patiente — suspicion Sjögren</div></div></div>
+      </div>
+      <div class="tcard">
+        <div class="tstars">★★★★★</div>
+        <p class="ttext">"Le cluster sur l'intestin perméable m'a permis de relier mes aphtes à répétition, mes ballonnements et ma muqueuse digestive. Ça m'a ouvert les yeux."</p>
+        <div class="tauthor"><div class="tavatar" style="background:var(--amber);">PL</div><div><div class="tname">Pierre L., 38 ans</div><div class="tdetail">Intestin perméable — aphtes récidivants</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="site-footer">
+  <div class="footer-inner">
+    <p class="footer-copy">© SanteDesMuqueuses.fr 2026</p>
+    <nav class="footer-nav" aria-label="Liens légaux">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="plan.html">Plan du site</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.silo-toggle').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var row=this.closest('.silo-row');
+      var open=row.classList.contains('open');
+      document.querySelectorAll('.silo-row').forEach(function(r){
+        r.classList.remove('open');
+        r.querySelector('.silo-toggle').setAttribute('aria-expanded','false');
+      });
+      if(!open){row.classList.add('open');this.setAttribute('aria-expanded','true');}
+    });
+  });
+</script>
+</body>
+</html>
