@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.santedesmuqueuses.fr/sitemap.xml

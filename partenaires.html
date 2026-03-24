@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partenaires – SanteDesMuqueuses.fr</title>
+  <meta name="description" content="Page Partenaires de SanteDesMuqueuses.fr — Cette page est en construction. Les partenaires et collaborations apparaîtront prochainement." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --blue:#2C6E9E;--blue-mid:#3F8FBE;--blue-pale:#EBF4FA;--blue-line:#C8DFF0;
+      --green:#3D7A40;--green-mid:#5FA463;--green-pale:#EAF4EA;
+      --amber:#C8780A;--amber-pale:#FEF4E0;
+      --purple:#5B4FA0;--purple-pale:#F0EEF8;
+      --slate:#3A5560;--slate-pale:#EFF3F5;
+      --bg:#FAFCFB;--white:#FFFFFF;--rule:#E2EAEC;
+      --text:#1E2C30;--text-mid:#4A5E64;--text-light:#7A9098;
+      --serif:'Lora',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{
+      font-family:var(--sans);
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none;}
+
+    /* HEADER STRIP */
+    .page-header{
+      background: linear-gradient(135deg, var(--blue) 0%, #1e5078 100%);
+      padding:52px 28px 44px;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .page-header::before{
+      content:'';
+      position:absolute;inset:0;
+      background:
+        radial-gradient(circle at 15% 50%, rgba(255,255,255,.07) 0%, transparent 55%),
+        radial-gradient(circle at 85% 30%, rgba(95,164,99,.18) 0%, transparent 50%);
+      pointer-events:none;
+    }
+    .page-header-inner{position:relative;}
+    .page-header-eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+      color:rgba(255,255,255,.65);margin-bottom:14px;
+    }
+    .page-header-eyebrow a{color:rgba(255,255,255,.65);transition:color .2s;}
+    .page-header-eyebrow a:hover{color:#fff;}
+    .eyebrow-sep{opacity:.4;}
+    .page-header h1{
+      font-family:var(--serif);
+      font-size:clamp(1.8rem,3.5vw,2.6rem);
+      font-weight:700;
+      color:#fff;
+      line-height:1.2;
+      margin-bottom:12px;
+    }
+    .page-header-sub{
+      font-size:.98rem;
+      color:rgba(255,255,255,.72);
+      max-width:520px;
+      margin:0 auto;
+    }
+    .page-header-count{
+      display:inline-flex;align-items:center;gap:6px;
+      margin-top:20px;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.2);
+      padding:6px 16px;border-radius:50px;
+      font-size:.8rem;font-weight:600;color:rgba(255,255,255,.85);
+    }
+
+    /* WAVE */
+    .wave{display:block;width:100%;overflow:hidden;line-height:0;background:var(--blue);}
+    .wave svg{display:block;width:100%;}
+
+    /* MAIN CONTENT */
+    .wrap{max-width:1060px;margin:0 auto;padding:0 24px;}
+    .main{padding:60px 24px 80px;}
+
+    /* CARD CONSTRUCTION */
+    .construction-card{
+      background:var(--white);
+      border-radius:24px;
+      box-shadow:0 8px 24px rgba(0,0,0,.05);
+      padding:48px 32px;
+      text-align:center;
+      border:1px solid var(--rule);
+    }
+    .construction-icon{
+      font-size:4rem;
+      margin-bottom:20px;
+      display:inline-block;
+    }
+    .construction-card h2{
+      font-family:var(--serif);
+      font-size:1.8rem;
+      font-weight:700;
+      color:var(--blue);
+      margin-bottom:16px;
+    }
+    .construction-card p{
+      font-size:1.1rem;
+      color:var(--text-mid);
+      max-width:520px;
+      margin:0 auto 24px auto;
+    }
+    .construction-note{
+      background:var(--blue-pale);
+      border-radius:16px;
+      padding:20px;
+      margin-top:32px;
+      max-width:480px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .construction-note p{
+      font-size:.9rem;
+      color:var(--blue);
+      margin:0;
+    }
+    .btn-home{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:var(--blue);
+      color:#fff;
+      padding:12px 28px;
+      border-radius:40px;
+      font-weight:600;
+      font-size:.9rem;
+      transition:background .2s,transform .1s;
+      margin-top:16px;
+    }
+    .btn-home:hover{
+      background:var(--blue-mid);
+      transform:translateY(-2px);
+    }
+
+    /* FOOTER */
+    footer{
+      background:#1E2C30;
+      padding:28px 24px;
+    }
+    .footer-inner{
+      max-width:1060px;margin:0 auto;
+      display:flex;align-items:center;justify-content:space-between;
+      gap:16px;flex-wrap:wrap;
+    }
+    .footer-copy{font-size:.82rem;color:rgba(255,255,255,.38);}
+    .footer-nav{display:flex;gap:20px;flex-wrap:wrap;}
+    .footer-nav a{
+      font-size:.82rem;color:rgba(255,255,255,.45);
+      transition:color .2s;
+    }
+    .footer-nav a:hover{color:rgba(255,255,255,.85);}
+
+    @media(max-width:600px){
+      .construction-card{padding:32px 20px;}
+      .construction-card h2{font-size:1.5rem;}
+      .footer-inner{flex-direction:column;align-items:flex-start;gap:12px;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-header-eyebrow">
+      <a href="index.html">SanteDesMuqueuses.fr</a>
+      <span class="eyebrow-sep">›</span>
+      Partenaires
+    </div>
+    <h1>Partenaires</h1>
+    <p class="page-header-sub">Collaborations scientifiques, institutions de santé et partenaires éditoriaux</p>
+    <div class="page-header-count">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+      Page en construction
+    </div>
+  </div>
+</div>
+
+<!-- WAVE -->
+<div class="wave">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:48px;">
+    <path d="M0,24 C360,48 720,0 1080,32 C1260,48 1380,12 1440,24 L1440,48 L0,48 Z" fill="#FAFCFB"/>
+  </svg>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+  <div class="wrap">
+    <div class="construction-card">
+      <div class="construction-icon">🏗️</div>
+      <h2>Page en construction</h2>
+      <p>Cette page est en cours de préparation. Les partenaires, collaborations et mentions apparaîtront prochainement.</p>
+      <div class="construction-note">
+        <p>📌 <strong>À venir :</strong> Partenaires scientifiques, laboratoires, institutions de santé, collaborations éditoriales et professionnels de la santé partenaires.</p>
+      </div>
+      <a href="index.html" class="btn-home">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-6 9 6v11a2 2 0 0 1-2 2h-5v-7H9v7H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Retour à l'accueil
+      </a>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">© SanteDesMuqueuses.fr 2026</p>
+    <nav class="footer-nav" aria-label="Liens légaux">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="ligne-editoriale.html">Ligne éditoriale</a>
+      <a href="partenaires.html">Partenaires</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
