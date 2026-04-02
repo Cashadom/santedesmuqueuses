@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Références scientifiques | Études cliniques sur les muqueuses | SanteDesMuqueuses.fr</title>
+<meta name="description" content="Recueil des études cliniques et revues systématiques sur l'argousier, l'oméga-7, les probiotiques et la santé des muqueuses. Sources PubMed, essais randomisés, méta-analyses."/>
+<meta name="keywords" content="études scientifiques, argousier, oméga-7, probiotiques, muqueuses, PubMed, essai clinique, méta-analyse, Sjögren, ménopause, atrophie vaginale"/>
+<meta name="author" content="Clarisse"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://www.santedesmuqueuses.fr/etudes.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+<style>
+:root {
+    --navy: #1a3a4f;
+    --navy-light: #2a4a60;
+    --gray-dark: #2c3e3f;
+    --gray-mid: #5a6e6f;
+    --gray-light: #e8edee;
+    --gray-pale: #f5f7f7;
+    --white: #ffffff;
+    --rule: #d0dbdd;
+    --text: #1e2c2d;
+    --text-mid: #4a5c5d;
+    --text-light: #7a8e8f;
+    --blue-accent: #2c6e9e;
+    --blue-pale: #eaf1f5;
+    --green-accent: #3d7a40;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--gray-pale);
+    color: var(--text);
+    line-height: 1.65;
+}
+a {
+    color: var(--blue-accent);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.site-nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--rule);
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.site-nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+.site-nav-brand {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: -0.2px;
+    color: var(--navy);
+}
+.site-nav-links {
+    display: flex;
+    gap: 28px;
+}
+.site-nav-links a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--gray-mid);
+    transition: color 0.2s;
+}
+.site-nav-links a:hover {
+    color: var(--navy);
+    text-decoration: none;
+}
+.page-header {
+    background: var(--navy);
+    padding: 48px 24px 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.page-header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.page-header h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--white);
+    letter-spacing: -0.3px;
+    margin-bottom: 12px;
+}
+.page-header p {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.7);
+    max-width: 700px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+}
+.reference-section {
+    margin-bottom: 48px;
+}
+.section-title {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--navy);
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--gray-light);
+    margin-bottom: 24px;
+}
+.reference-card {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    transition: box-shadow 0.2s;
+}
+.reference-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+.reference-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+.reference-title a {
+    color: var(--navy);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--gray-light);
+}
+.reference-title a:hover {
+    border-bottom-color: var(--blue-accent);
+    color: var(--blue-accent);
+}
+.reference-meta {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 12px;
+}
+.reference-summary {
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    line-height: 1.65;
+    margin-bottom: 12px;
+}
+.reference-pmid {
+    font-size: 0.7rem;
+    font-family: 'Monaco', 'Menlo', monospace;
+    color: var(--text-light);
+    background: var(--gray-pale);
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.divider {
+    height: 1px;
+    background: var(--rule);
+    margin: 32px 0;
+}
+.institutional {
+    background: var(--gray-pale);
+    border-left: 3px solid var(--navy);
+    padding: 20px 24px;
+    margin: 24px 0;
+}
+.institutional p {
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    margin-bottom: 4px;
+}
+.institutional a {
+    font-weight: 500;
+}
+footer {
+    background: var(--white);
+    border-top: 1px solid var(--rule);
+    padding: 28px 24px;
+}
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.footer-links {
+    display: flex;
+    gap: 28px;
+}
+.footer-links a {
+    font-size: 0.8rem;
+    color: var(--gray-mid);
+}
+.footer-links a:hover {
+    color: var(--navy);
+    text-decoration: none;
+}
+.footer-copy {
+    font-size: 0.75rem;
+    color: var(--text-light);
+}
+@media (max-width: 768px) {
+    .site-nav-links {
+        display: none;
+    }
+    .reference-card {
+        padding: 18px;
+    }
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+    <div class="site-nav-inner">
+        <a href="index.html" class="site-nav-brand">SanteDesMuqueuses.fr</a>
+        <div class="site-nav-links">
+            <a href="sante-des-muqueuses.html">Fondations</a>
+            <a href="secheresse-oculaire.html">Zones</a>
+            <a href="menopause-secheresse-muqueuses.html">Causes</a>
+            <a href="huile-argousier-muqueuses.html">Solutions</a>
+            <a href="etudes.html" style="color:var(--navy);font-weight:600;">Références</a>
+        </div>
+    </div>
+</nav>
+
+<div class="page-header">
+    <div class="page-header-inner">
+        <h1>Références scientifiques</h1>
+        <p>Études cliniques, essais randomisés et revues systématiques indexés dans PubMed.</p>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- ARGOUSIER & OMÉGA-7 -->
+    <div class="reference-section">
+        <h2 class="section-title">Argousier & Oméga-7 — santé des muqueuses</h2>
+
+        <div class="reference-card">
+            <div class="reference-title">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/25104582/" target="_blank" rel="noopener noreferrer">
+                    Effets de l'huile d'argousier sur l'atrophie vaginale chez la femme ménopausée
+                </a>
+            </div>
+            <div class="reference-meta">Larmo PS, Yang B, Hyssälä J, Kallio HP, Erkkola R · Maturitas 2014</div>
+            <div class="reference-summary">
+                Essai randomisé en double aveugle mené sur 116 femmes ménopausées souffrant de sécheresse vaginale.
+                Une supplémentation quotidienne de 3 g d'huile d'argousier pendant trois mois a amélioré
+                significativement l'intégrité de l'épithélium vaginal par rapport au placebo (OR = 3,1 ; IC 95 % 1,11-8,95).
+                L'étude conclut que l'huile d'argousier constitue une alternative potentielle pour les femmes ne pouvant
+                pas recourir aux traitements œstrogéniques.
+            </div>
+            <div class="reference-pmid">PMID : 25104582</div>
+        </div>
+
+        <div class="reference-card">
+            <div class="reference-title">
+                Argousier et syndrome de Gougerot-Sjögren — effets sur les muqueuses génitales
+            </div>
+            <div class="reference-meta">Yang B, Erkkola R · In: Seabuckthorn (Hippophae L.) A multipurpose wonder plant, 2008</div>
+            <div class="reference-summary">
+                Étude randomisée en double aveugle chez des femmes atteintes du syndrome de Sjögren.
+                Une supplémentation en huile d'argousier pendant trois mois a réduit les sensations de démangeaisons,
+                de douleurs, de brûlures et de sécheresse au niveau des muqueuses génitales par rapport au groupe placebo.
+                L'argousier a également montré des effets bénéfiques sur les muqueuses oculaires et buccales.
+            </div>
+            <div class="reference-pmid">Référence : Yang & Erkkola, 2008 — chapitre d'ouvrage</div>
+        </div>
+
+        <div class="reference-card">
+            <div class="reference-title">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/31228942/" target="_blank" rel="noopener noreferrer">
+                    Acides gras de l'argousier et santé humaine — revue systématique
+                </a>
+            </div>
+            <div class="reference-meta">Solà Marsiñach M, Checa A · Nutrients 2019</div>
+            <div class="reference-summary">
+                Revue de la littérature dédiée aux acides gras de l'argousier (Hippophae rhamnoides).
+                L'argousier concentre plus de 190 nutriments bioactifs — vitamines A, C, E, K, B, acides gras oméga-3,6,7,9,
+                polyphénols, flavonoïdes, caroténoïdes et minéraux. Il est l'une des rares plantes à réunir les quatre
+                familles d'oméga, avec une teneur en oméga-7 supérieure à toute autre source végétale connue.
+            </div>
+            <div class="reference-pmid">PMID : 31228942</div>
+        </div>
+
+        <div class="reference-card">
+            <div class="reference-title">
+                Profil nutritionnel de l'argousier — oméga-7 et synthèse de collagène
+            </div>
+            <div class="reference-meta">Solà Marsiñach M · ScienceDirect / PubMed 2023</div>
+            <div class="reference-summary">
+                L'oméga-7 (acide palmitoléique) stimule la synthèse de collagène et réduit l'inflammation via la voie SIRT1
+                dans les cellules kératinocytes. L'argousier présente des effets documentés sur la peau, les marqueurs
+                sanguins et la santé oculaire et vaginale.
+            </div>
+            <div class="reference-pmid">ScienceDirect : S175646462300573X</div>
+        </div>
+
+        <div class="reference-card">
+            <div class="reference-title">
+                Argousier, barrières cutanées et muqueuses — perspective anti-inflammatoire
+            </div>
+            <div class="reference-meta">PMC review · 2024-2025</div>
+            <div class="reference-summary">
+                Les barrières cutanées et muqueuses constituent la première ligne de défense contre les agents pathogènes
+                et les agressions environnementales. L'argousier présente un profil anti-inflammatoire documenté grâce à
+                ses flavonoïdes, caroténoïdes et acides gras insaturés qui protègent l'intégrité des muqueuses face au
+                stress oxydatif.
+            </div>
+            <div class="reference-pmid">PMC : 12644098</div>
+        </div>
+    </div>
+
+    <!-- PROBIOTIQUES & BARRIÈRE MUQUEUSE -->
+    <div class="reference-section">
+        <h2 class="section-title">Probiotiques & barrière muqueuse intestinale</h2>
+
+        <div class="reference-card">
+            <div class="reference-title">
+                Méta-analyse — Probiotiques et perméabilité intestinale (46 essais RCT)
+            </div>
+            <div class="reference-meta">Frontiers in Immunology · 2023</div>
+            <div class="reference-summary">
+                Méta-analyse portant sur 46 études randomisées contrôlées (1 603 participants) et 22 études en prébiotiques.
+                Les souches probiotiques Lactobacillus et Bifidobacterium réduisent la proportion de bactéries Gram-négatives,
+                diminuent la production de lipopolysaccharides (LPS), et abaissent les cytokines pro-inflammatoires TNF-α et IL-1β,
+                protégeant ainsi la fonction de barrière de la muqueuse intestinale.
+            </div>
+            <div class="reference-pmid">PMC : 10165082</div>
+        </div>
+
+        <div class="reference-card">
+            <div class="reference-title">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/18671775/" target="_blank" rel="noopener noreferrer">
+                    Probiotiques et syndrome de l'intestin irritable — effet sur la perméabilité intestinale
+                </a>
+            </div>
+            <div class="reference-meta">Essai randomisé en simple aveugle · 30 patients IBS-D</div>
+            <div class="reference-summary">
+                Traitement de quatre semaines par bactéries lactiques actives. Réduction significative de la perméabilité
+                de l'intestin grêle mesurée par test lactulose/mannitol (de 0,038 à 0,023 ; p = 0,004) et diminution des
+                scores globaux de symptômes chez les patients souffrant du syndrome de l'intestin irritable à prédominance diarrhéique.
+            </div>
+            <div class="reference-pmid">PMID : 18671775</div>
+        </div>
+
+        <div class="reference-card">
+            <div class="reference-title">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/24394468/" target="_blank" rel="noopener noreferrer">
+                    Probiotiques et stabilisation de la barrière muqueuse intestinale
+                </a>
+            </div>
+            <div class="reference-meta">Mennigen R, Bruewer M · World J Gastroenterol 2009</div>
+            <div class="reference-summary">
+                Revue de littérature. Les bactéries probiotiques capables de survivre aux conditions gastriques et de coloniser
+                temporairement l'épithélium intestinal sont des candidates prometteuses pour le traitement des états pathologiques
+                associés à une flore perturbée et à une altération des fonctions de barrière muqueuse. Applications documentées :
+                diarrhées à rotavirus, allergies alimentaires, radiothérapie pelvienne.
+            </div>
+            <div class="reference-pmid">PMID : 24394468</div>
+        </div>
+
+        <div class="reference-card">
+            <div class="reference-title">
+                Synbiotiques, prébiotiques et marqueurs de perméabilité — méta-analyse 2025
+            </div>
+            <div class="reference-meta">ScienceDirect / PubMed · 2025</div>
+            <div class="reference-summary">
+                Méta-analyse portant sur 46 études en probiotiques/synbiotiques (1 603 participants).
+                Réduction significative des taux de lipopolysaccharides circulants après supplémentation.
+                Souches les plus efficaces identifiées : Bifidobacterium, Lactobacillus et Akkermansia.
+                Nécessité d'une meilleure standardisation des dosages et des durées d'intervention.
+            </div>
+            <div class="reference-pmid">PMID : 40378939</div>
+        </div>
+
+        <div class="reference-card">
+            <div class="reference-title">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/28102115/" target="_blank" rel="noopener noreferrer">
+                    Probiotiques et maladies gastro-intestinales — impact sur la fonction de barrière
+                </a>
+            </div>
+            <div class="reference-meta">Revue systématique · British Journal of Nutrition</div>
+            <div class="reference-summary">
+                L'intégrité de la barrière intestinale est un prérequis au maintien de l'homéostasie muqueuse.
+                La disruption de cette barrière épithéliale est impliquée dans plusieurs pathologies : infections,
+                obésité, diabète, entérocolite nécrosante, maladies inflammatoires chroniques de l'intestin.
+                Des souches probiotiques spécifiques peuvent contribuer à restaurer cette intégrité.
+            </div>
+            <div class="reference-pmid">PMID : 28102115</div>
+        </div>
+    </div>
+
+    <!-- SOURCES INSTITUTIONNELLES -->
+    <div class="reference-section">
+        <h2 class="section-title">Sources institutionnelles</h2>
+
+        <div class="institutional">
+            <p><strong>Haute Autorité de Santé (HAS)</strong> — Recommandations sur la ménopause et le syndrome génito-urinaire (GSM)</p>
+            <p>Prise en charge clinique de l'atrophie vaginale et des symptômes urinaires associés à la ménopause.</p>
+            <p><a href="https://www.has-sante.fr" target="_blank" rel="noopener noreferrer">has-sante.fr →</a></p>
+        </div>
+
+        <div class="institutional">
+            <p><strong>EFSA — Autorité européenne de sécurité des aliments</strong></p>
+            <p>Base réglementaire des allégations santé pour les acides gras, vitamines et minéraux sur le maintien des muqueuses normales (règlement CE n° 1924/2006).</p>
+            <p><a href="https://www.efsa.europa.eu" target="_blank" rel="noopener noreferrer">efsa.europa.eu →</a></p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-links">
+            <a href="index.html">Accueil</a>
+            <a href="edito.html">Rédaction</a>
+            <a href="mentions-legales.html">Mentions légales</a>
+            <a href="plan.html">Plan du site</a>
+        </div>
+        <div class="footer-copy">
+            © SanteDesMuqueuses.fr — 2026
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
